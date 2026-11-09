@@ -1,0 +1,25 @@
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archivos temporales de Office / LibreOffice
+~$*
+.~lock.*#
+
+# Insumos privados del curso (plantillas, rúbrica, informe Parte I): no se versionan.
+# La plantilla del diccionario que usa scripts/build_diccionario_final.py se versiona en templates/.
+_inputs/

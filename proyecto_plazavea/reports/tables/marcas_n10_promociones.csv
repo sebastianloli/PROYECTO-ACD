@@ -1,0 +1,33 @@
+brand,n,n_promo,promo_rate,precio_mediano,descuento_mediano_promocionados,promo_rate_esperada,dif_obs_menos_esp_pp,grupo_principal,pct_en_grupo_principal,ic95_inf,ic95_sup
+PRIMOR,11,11,100.0,12.2,20.59,60.5,39.5,Packs Abarrotes,45.5,74.1,100.0
+NICOLINI,14,13,92.9,1.5,11.76,50.8,42.1,"Fideos, Pastas y Salsas",92.9,68.5,98.7
+DON VITTORIO,24,22,91.7,3.05,15.25,54.8,36.9,"Fideos, Pastas y Salsas",95.8,74.2,97.7
+MOLITALIA,23,21,91.3,2.5,17.14,52.9,38.4,"Fideos, Pastas y Salsas",100.0,73.2,97.6
+ALACENA,30,27,90.0,8.2,10.67,36.9,53.1,"Salsas, Cremas y Condimentos",83.3,74.4,96.5
+OREO,14,12,85.7,6.9,8.65,62.2,23.5,Galletas y Golosinas,57.1,60.1,96.0
+CASINO,13,11,84.6,4.9,10.91,49.1,35.5,Galletas y Golosinas,76.9,57.8,95.7
+LAY'S,17,14,82.4,6.9,19.63,51.5,30.9,Snacks y Piqueos,64.7,59.0,93.8
+VICTORIA,13,10,76.9,6.2,15.69,64.4,12.5,Galletas y Golosinas,53.8,49.7,91.8
+LIBBY'S,10,7,70.0,7.0,20.8,24.3,45.7,"Salsas, Cremas y Condimentos",100.0,39.7,89.2
+NESTLÉ,12,8,66.7,13.65,20.8,30.3,36.4,Chocolatería,83.3,39.1,86.2
+INKA CHIPS,14,9,64.3,6.8,12.82,25.0,39.3,Snacks y Piqueos,100.0,38.8,83.7
+FIELD,17,10,58.8,6.3,15.69,57.2,1.6,Galletas y Golosinas,64.7,36.0,78.4
+COSTEÑO,23,13,56.5,6.5,20.0,37.9,18.6,Menestras,47.8,36.8,74.4
+LA IBERICA,11,5,45.5,24.3,13.12,30.0,15.5,Chocolatería,90.9,21.3,72.0
+COSTA,41,18,43.9,4.2,20.87,33.1,10.8,Galletas y Golosinas,82.9,29.9,59.0
+CLUB SOCIAL,10,4,40.0,4.9,16.33,60.3,-20.3,Galletas y Golosinas,60.0,16.8,68.7
+CAMPOMAR,12,4,33.3,6.2,10.82,25.8,7.5,Conservas,100.0,13.8,60.9
+VALLEALTO,12,3,25.0,9.9,20.18,25.0,0.0,Snacks y Piqueos,100.0,8.9,53.2
+FLORIDA,13,3,23.1,5.9,9.23,25.6,-2.5,Conservas,84.6,8.2,50.3
+BON O BON,11,2,18.2,9.9,19.54,30.7,-12.5,Chocolatería,72.7,5.1,47.7
+SIBARITA,27,4,14.8,5.2,11.95,24.3,-9.5,"Salsas, Cremas y Condimentos",100.0,5.9,32.5
+AMBROSOLI,23,3,13.0,7.9,18.35,33.5,-20.5,Galletas y Golosinas,91.3,4.5,32.1
+AJINOMEN,16,2,12.5,2.0999999999999996,3.93,10.5,2.0,Comidas Instantáneas,100.0,3.5,36.0
+CASA VERDE,19,2,10.5,8.2,7.38,24.7,-14.2,"Salsas, Cremas y Condimentos",42.1,2.9,31.4
+BELL'S,184,19,10.3,5.9,8.6,29.6,-19.3,"Salsas, Cremas y Condimentos",24.5,6.7,15.6
+ARCOR,10,1,10.0,14.3,30.43,36.3,-26.3,Galletas y Golosinas,60.0,1.8,40.4
+EL OLIVAR,11,1,9.1,14.9,15.0,27.7,-18.6,Aceite,54.5,1.6,37.7
+VILLA NATURA,25,2,8.0,9.9,12.0,25.0,-17.0,Snacks y Piqueos,100.0,2.2,25.0
+TESORO DEL CAMPO,13,0,0.0,6.4,,30.5,-30.5,Menestras,92.3,0.0,22.8
+BARCIDDA,12,0,0.0,11.7,,32.6,-32.6,"Salsas, Cremas y Condimentos",66.7,0.0,24.3
+TIYAPUY,12,0,0.0,8.55,,25.0,-25.0,Snacks y Piqueos,100.0,0.0,24.3

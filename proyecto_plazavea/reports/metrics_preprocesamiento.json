@@ -1,0 +1,886 @@
+{
+  "raw_filas": 1438,
+  "raw_columnas": 12,
+  "raw_sku_unicos": 1438,
+  "nulos_presentation": 138,
+  "pct_nulos_presentation": 9.6,
+  "nulos_image_url": 1359,
+  "pct_nulos_image_url": 94.51,
+  "integracion": {
+    "registros_antes": 1438,
+    "duplicados_sku": 0,
+    "eliminados": 0,
+    "registros_despues": 1438
+  },
+  "precio_actual_min": 0.8,
+  "precio_actual_max": 89.2,
+  "precio_regular_min": 0.8,
+  "precio_regular_max": 105.0,
+  "discount_almacenado_pct_ceros": 100.0,
+  "n_con_rebaja_raw": 479,
+  "discount_calc_max": 38.14,
+  "presentation_recuperados": 138,
+  "presentation_no_especificado": 0,
+  "presentation_validacion_cobertura_pct": 98.23,
+  "presentation_validacion_envase_coincide_pct": 90.99,
+  "presentation_mecanismo": {
+    "promo_rate_por_imputacion": {
+      "0": {
+        "n": 1300,
+        "n_promo": 403,
+        "promo_rate_pct": 31.0
+      },
+      "1": {
+        "n": 138,
+        "n_promo": 76,
+        "promo_rate_pct": 55.1
+      }
+    },
+    "promo_rate_por_imputacion_sin_packs": {
+      "0": {
+        "n": 1277,
+        "n_promo": 380,
+        "promo_rate_pct": 29.8
+      },
+      "1": {
+        "n": 101,
+        "n_promo": 39,
+        "promo_rate_pct": 38.6
+      }
+    },
+    "n_imputados_en_packs": 37,
+    "pct_imputado_en_packs": 61.7,
+    "pct_imputado_global": 9.6,
+    "imputados_por_grupo": {
+      "Packs Abarrotes": 37,
+      "Fideos, Pastas y Salsas": 31,
+      "Snacks y Piqueos": 18,
+      "Salsas, Cremas y Condimentos": 15,
+      "Chocolatería": 11,
+      "Galletas y Golosinas": 11,
+      "Conservas": 7,
+      "Azúcar y Endulzantes": 5,
+      "Arroz": 1,
+      "Verduras": 1,
+      "Comidas Instantáneas": 1
+    }
+  },
+  "iqr": {
+    "current_price": {
+      "Q1": 4.9,
+      "Q3": 13.88,
+      "IQR": 8.98,
+      "lim_inf": -8.56,
+      "lim_sup": 27.34,
+      "lim_sup_exacto": 27.3375,
+      "n_outliers": 74,
+      "n_base": 1438,
+      "pct_outliers": 5.15,
+      "maximo": 89.2
+    },
+    "regular_price": {
+      "Q1": 5.12,
+      "Q3": 14.5,
+      "IQR": 9.38,
+      "lim_inf": -8.94,
+      "lim_sup": 28.57,
+      "lim_sup_exacto": 28.5663,
+      "n_outliers": 74,
+      "n_base": 1438,
+      "pct_outliers": 5.15,
+      "maximo": 105.0
+    },
+    "discount_pct (promocionados)": {
+      "Q1": 10.38,
+      "Q3": 20.08,
+      "IQR": 9.7,
+      "lim_inf": -4.17,
+      "lim_sup": 34.63,
+      "lim_sup_exacto": 34.63,
+      "n_outliers": 6,
+      "n_base": 479,
+      "pct_outliers": 1.25,
+      "maximo": 38.14
+    }
+  },
+  "n_outliers_precio_actual": 74,
+  "n_outliers_descuento": 6,
+  "outliers_precio_por_grupo_clean": {
+    "Aceite": 27,
+    "Chocolatería": 14,
+    "Salsas, Cremas y Condimentos": 9,
+    "Azúcar y Endulzantes": 8,
+    "Galletas y Golosinas": 5,
+    "Snacks y Piqueos": 4,
+    "Arroz": 4,
+    "Conservas": 2,
+    "Packs Abarrotes": 1
+  },
+  "marcas_unicas_raw": 275,
+  "marcas_unicas_normalizadas": 272,
+  "marcas_unificadas": {
+    "CASAVERDE": "CASA VERDE",
+    "LAYS": "LAY'S",
+    "NESTLE": "NESTLÉ"
+  },
+  "marcas_apostrofo_reconstruido": {
+    "CRICKET S": {
+      "nueva": "CRICKETS",
+      "n": 8
+    },
+    "HELLMANN S": {
+      "nueva": "HELLMANN'S",
+      "n": 5
+    },
+    "LIBBY S": {
+      "nueva": "LIBBY'S",
+      "n": 10
+    },
+    "SNYDER S": {
+      "nueva": "SNYDER'S",
+      "n": 1
+    }
+  },
+  "marcas_registros_modificados": {
+    "variantes": 3,
+    "apostrofo": 24
+  },
+  "submarcas_conservadas": [
+    {
+      "marca": "BON BON",
+      "n_marca": 1,
+      "submarca": "BON BON BUM",
+      "n_submarca": 1
+    },
+    {
+      "marca": "COSTA",
+      "n_marca": 41,
+      "submarca": "COSTA NIK",
+      "n_submarca": 1
+    },
+    {
+      "marca": "EL CORTE INGLÉS",
+      "n_marca": 9,
+      "submarca": "EL CORTE INGLÉS SELECTION",
+      "n_submarca": 6
+    },
+    {
+      "marca": "MEXI",
+      "n_marca": 2,
+      "submarca": "MEXI NACHOS",
+      "n_submarca": 1
+    },
+    {
+      "marca": "NABISCO",
+      "n_marca": 2,
+      "submarca": "NABISCO RITZ",
+      "n_submarca": 1
+    },
+    {
+      "marca": "NESTLE",
+      "n_marca": 1,
+      "submarca": "NESTLE MOROCHAS",
+      "n_submarca": 1
+    },
+    {
+      "marca": "NESTLE",
+      "n_marca": 1,
+      "submarca": "NESTLE SUBLIME",
+      "n_submarca": 4
+    },
+    {
+      "marca": "VICTORIA",
+      "n_marca": 13,
+      "submarca": "VICTORIA GLACITAS",
+      "n_submarca": 6
+    },
+    {
+      "marca": "VICTORIA",
+      "n_marca": 13,
+      "submarca": "VICTORIA TENTACION",
+      "n_submarca": 4
+    }
+  ],
+  "discount_pct_promocionados_cuartiles": {
+    "0.25": 10.38,
+    "0.5": 14.71,
+    "0.75": 20.08
+  },
+  "sensibilidad_cortes_intensidad": {
+    "n_exacto_10": 11,
+    "n_exacto_20": 11,
+    "n_entre_19_5_y_20_5": 31,
+    "alternativas": [
+      {
+        "cortes": "10/20, intervalos (a, b] (elegido)",
+        "pct_Bajo": 22.8,
+        "pct_Medio": 52.0,
+        "pct_Alto": 25.3,
+        "nivel_predominante": "Medio",
+        "packs_pct_alto": 43.3
+      },
+      {
+        "cortes": "10/20, intervalos [a, b)",
+        "pct_Bajo": 20.5,
+        "pct_Medio": 52.0,
+        "pct_Alto": 27.6,
+        "nivel_predominante": "Medio",
+        "packs_pct_alto": 50.0
+      },
+      {
+        "cortes": "Cuartiles exactos 10,38/20,08, (a, b]",
+        "pct_Bajo": 25.1,
+        "pct_Medio": 50.1,
+        "pct_Alto": 24.8,
+        "nivel_predominante": "Medio",
+        "packs_pct_alto": 43.3
+      }
+    ]
+  },
+  "n_is_pack": 64,
+  "n_is_pack_fuera_categoria_packs": 4,
+  "n_in_scope": 1437,
+  "n_promocionados_total": 479,
+  "contenido": {
+    "n_sin_contenido": 0,
+    "n_con_multiplicador": 18,
+    "unidades": {
+      "g": 1122,
+      "un": 188,
+      "ml": 128
+    },
+    "validacion_n_base": 1277,
+    "validacion_n_coincide": 1189,
+    "validacion_pct_coincide": 93.11,
+    "n_content_validated": 1327,
+    "unit_price_base": {
+      "g": "S/ por kg",
+      "ml": "S/ por litro",
+      "un": "S/ por unidad"
+    }
+  },
+  "decision_columnas": [
+    {
+      "columna_raw": "sku",
+      "decision": "Se conserva",
+      "justificacion": "Identificador único del producto (clave)"
+    },
+    {
+      "columna_raw": "brand",
+      "decision": "Se conserva (normalizada)",
+      "justificacion": "Segmentación por marca"
+    },
+    {
+      "columna_raw": "name",
+      "decision": "Se conserva",
+      "justificacion": "Descripción; base de la imputación y de is_pack"
+    },
+    {
+      "columna_raw": "category",
+      "decision": "Se reemplaza",
+      "justificacion": "Separada en category_level1 / category_group / subcategory"
+    },
+    {
+      "columna_raw": "seller",
+      "decision": "Se excluye",
+      "justificacion": "Varianza cero: 'plaza vea' en el 100 %"
+    },
+    {
+      "columna_raw": "stock",
+      "decision": "Se excluye",
+      "justificacion": "Varianza cero: True en el 100 %"
+    },
+    {
+      "columna_raw": "presentation",
+      "decision": "Se conserva (imputada)",
+      "justificacion": "Envase y tamaño; flag presentation_imputed; base de content_qty y unit_price"
+    },
+    {
+      "columna_raw": "current_price",
+      "decision": "Se conserva",
+      "justificacion": "Variable analítica central (S/)"
+    },
+    {
+      "columna_raw": "regular_price",
+      "decision": "Se conserva",
+      "justificacion": "Variable analítica central (S/)"
+    },
+    {
+      "columna_raw": "discount",
+      "decision": "Se excluye",
+      "justificacion": "Inválida: 0 en el 100 % pese a 479 rebajas; reemplazada por discount_pct"
+    },
+    {
+      "columna_raw": "product_url",
+      "decision": "Solo dataset limpio",
+      "justificacion": "Trazabilidad; sin valor analítico (sku ya identifica)"
+    },
+    {
+      "columna_raw": "image_url",
+      "decision": "Solo dataset limpio",
+      "justificacion": "94,5 % nulos por lazy-loading; sin valor analítico"
+    }
+  ],
+  "antes_despues": [
+    {
+      "dataset": "raw",
+      "filas": 1438,
+      "columnas": 12
+    },
+    {
+      "dataset": "clean (completo)",
+      "filas": 1438,
+      "columnas": 29
+    },
+    {
+      "dataset": "final (analítico)",
+      "filas": 1437,
+      "columnas": 21
+    }
+  ],
+  "n_envase_distinto_name_vs_presentation": 115,
+  "registro_calidad": [
+    {
+      "Problema": "Descuento almacenado inválido",
+      "Detección": "Regla de coherencia: discount = 0 en 100 % y 479 productos con current_price < regular_price",
+      "Decisión": "Descartar discount y reconstruirlo",
+      "Técnica": "discount_pct = (regular − current)/regular × 100; has_discount con tolerancia S/ 0,005",
+      "Resultado": "479 promocionados; discount_pct de 0 a 38,14 %",
+      "Justificación": "El selector '-X%' no capturó el texto y fillna(0) lo ocultó; los precios sí son confiables"
+    },
+    {
+      "Problema": "Nulos en presentation",
+      "Detección": "isna(): 138 nulos (9,60 %); tasa de rebaja 55,1 % en nulos vs 31,0 % en no nulos",
+      "Decisión": "Imputar desde name, no eliminar filas",
+      "Técnica": "Regex envase + cantidad/unidad al final del nombre + flag presentation_imputed",
+      "Resultado": "138 recuperados; 0 'No especificado'",
+      "Justificación": "Faltante no aleatorio (asociado a rebaja y a Packs; sin Packs 38,6 % vs 29,8 %): eliminar sesgaría la tasa promocional; la información está en el nombre"
+    },
+    {
+      "Problema": "Envase de presentation distinto al del nombre",
+      "Detección": "Comparación de la primera palabra de presentation con el envase extraído de name (no nulos)",
+      "Decisión": "Respetar el valor publicado",
+      "Técnica": "Sin transformación; se documenta",
+      "Resultado": "115 registros con envase distinto (p. ej. 'Bolsa 6un' vs 'Paquete 6un')",
+      "Justificación": "Inconsistencia del retailer entre tarjeta y nombre; no hay criterio para preferir uno"
+    },
+    {
+      "Problema": "Nulos masivos en image_url",
+      "Detección": "isna(): 1359 nulos (94,51 %)",
+      "Decisión": "No imputar; excluir del dataset analítico",
+      "Técnica": "Reducción de columnas",
+      "Resultado": "Conservada solo en dataset limpio",
+      "Justificación": "Lazy-loading de imágenes (hipótesis); variable de trazabilidad sin valor analítico"
+    },
+    {
+      "Problema": "Variantes de marca",
+      "Detección": "Clave alfanumérica en minúsculas y sin acentos (groupby)",
+      "Decisión": "Unificar a la escritura más frecuente",
+      "Técnica": "strip + upper + mapeo de variantes; brand_original como respaldo",
+      "Resultado": "Marcas: 275 → 272 (CASAVERDE, LAYS, NESTLE; 3 registros)",
+      "Justificación": "Evitar fragmentar los conteos y tasas por marca"
+    },
+    {
+      "Problema": "Apóstrofo perdido en marcas",
+      "Detección": "Marcas que terminan en ' S' (regex) y búsqueda de \"X'S\" / \"XS\" en name",
+      "Decisión": "Reconstruir la escritura desde name",
+      "Técnica": "Mapeo CRICKET S → CRICKETS, HELLMANN S → HELLMANN'S, LIBBY S → LIBBY'S, SNYDER S → SNYDER'S",
+      "Resultado": "24 registros corregidos; el número de marcas no cambia",
+      "Justificación": "Error de captura (apóstrofo convertido en espacio); el nombre del producto es la referencia verificable"
+    },
+    {
+      "Problema": "Submarcas",
+      "Detección": "Marcas que empiezan con otra marca + espacio (p. ej. VICTORIA / VICTORIA GLACITAS)",
+      "Decisión": "Conservar como marcas distintas",
+      "Técnica": "Sin transformación; se documenta",
+      "Resultado": "9 pares detectados; VICTORIA queda con n = 13 en el ranking",
+      "Justificación": "Así las publica el retailer; no hay regla objetiva de agregación y el prefijo da falsos positivos"
+    },
+    {
+      "Problema": "Dobles espacios internos en textos",
+      "Detección": "str.contains(r'\\s{2,}'): 5 en name y 8 en presentation",
+      "Decisión": "Colapsar a un espacio",
+      "Técnica": "str.strip() + str.replace(r'\\s+', ' ')",
+      "Resultado": "0 dobles espacios tras la limpieza",
+      "Justificación": "Evita falsas diferencias al agrupar o comparar textos"
+    },
+    {
+      "Problema": "Variables de varianza cero (seller, stock)",
+      "Detección": "nunique() = 1 en ambas",
+      "Decisión": "Excluir del dataset analítico",
+      "Técnica": "Reducción de columnas",
+      "Resultado": "Conservadas solo en dataset limpio",
+      "Justificación": "No segmentan; el listado muestra solo productos disponibles de la tienda"
+    },
+    {
+      "Problema": "Categoría jerárquica en un solo texto",
+      "Detección": "split(' / '): 71 valores, 2 o 3 niveles",
+      "Decisión": "Separar niveles",
+      "Técnica": "category_level1, category_group, subcategory (nivel 3 o repetición del nivel 2)",
+      "Resultado": "13 grupos, 71 subcategorías (dataset limpio); 12 y 70 en el analítico",
+      "Justificación": "Permite agregar a distintos niveles de detalle"
+    },
+    {
+      "Problema": "Registro fuera de alcance",
+      "Detección": "Nivel 1 = 'Frutas y Verduras' (1 registro)",
+      "Decisión": "Excluir del dataset analítico",
+      "Técnica": "Flag in_scope",
+      "Resultado": "Dataset final: 1437 registros",
+      "Justificación": "El proyecto se delimita a Abarrotes"
+    },
+    {
+      "Problema": "Outliers de precio actual",
+      "Detección": "IQR sobre current_price: límite superior S/ 27,34 (calculado sin redondear)",
+      "Decisión": "Conservar y marcar",
+      "Técnica": "Flag is_price_outlier (solo sobre current_price)",
+      "Resultado": "74 productos marcados",
+      "Justificación": "Precios altos válidos (aceite de oliva, endulzantes, packs, displays); regular_price tiene los mismos 74 outliers y un segundo flag sería redundante"
+    },
+    {
+      "Problema": "Outliers de descuento",
+      "Detección": "IQR sobre discount_pct entre promocionados: límite superior 34,63 %",
+      "Decisión": "Conservar sin flag",
+      "Técnica": "Listado de revisión (sección 5)",
+      "Resultado": "6 de 479 promocionados (1,25 %); máximo 38,14 %",
+      "Justificación": "Coherentes con sus precios; no son errores de captura"
+    },
+    {
+      "Problema": "Contenido no estructurado en presentation",
+      "Detección": "Regex cantidad + unidad (+ multiplicador) sobre presentation",
+      "Decisión": "Crear content_qty, content_unit, has_multiplier y unit_price",
+      "Técnica": "Conversión a g/ml/un y precio por kg, litro o unidad",
+      "Resultado": "1438 de 1438 con contenido; coincide con el nombre en 93,1 % de los no imputados",
+      "Justificación": "Permite comparar precios dentro de una subcategoría sin el efecto del tamaño"
+    },
+    {
+      "Problema": "Duplicados por SKU",
+      "Detección": "duplicated(subset='sku')",
+      "Decisión": "Eliminar si existieran",
+      "Técnica": "drop_duplicates(subset='sku')",
+      "Resultado": "1438 / 0 / 0 / 1438",
+      "Justificación": "Clave de la integración de 30 páginas"
+    },
+    {
+      "Problema": "Tipo de sku",
+      "Detección": "Longitudes 2–8 caracteres",
+      "Decisión": "Mantener como texto",
+      "Técnica": "dtype str al leer el CSV",
+      "Resultado": "sku sin pérdida de formato",
+      "Justificación": "Es identificador, no magnitud"
+    }
+  ],
+  "clean_filas": 1438,
+  "clean_columnas": 29,
+  "final_filas": 1437,
+  "final_columnas": 21,
+  "final_columnas_lista": [
+    "sku",
+    "name",
+    "brand",
+    "category_level1",
+    "category_group",
+    "subcategory",
+    "presentation",
+    "presentation_imputed",
+    "content_qty",
+    "content_unit",
+    "has_multiplier",
+    "content_validated",
+    "current_price",
+    "regular_price",
+    "unit_price",
+    "has_discount",
+    "discount_amount",
+    "discount_pct",
+    "promotion_intensity",
+    "is_price_outlier",
+    "is_pack"
+  ],
+  "clean_columnas_lista": [
+    "sku",
+    "brand",
+    "brand_original",
+    "name",
+    "category",
+    "category_level1",
+    "category_group",
+    "subcategory",
+    "seller",
+    "stock",
+    "presentation",
+    "presentation_imputed",
+    "content_qty",
+    "content_unit",
+    "has_multiplier",
+    "content_validated",
+    "current_price",
+    "regular_price",
+    "unit_price",
+    "discount_original",
+    "has_discount",
+    "discount_amount",
+    "discount_pct",
+    "promotion_intensity",
+    "is_price_outlier",
+    "is_pack",
+    "in_scope",
+    "product_url",
+    "image_url"
+  ],
+  "conteos_clean_vs_final": {
+    "clean": {
+      "registros": 1438,
+      "marcas": 272,
+      "category_group": 13,
+      "subcategory": 71,
+      "sin_descuento": 959,
+      "promocionados": 479
+    },
+    "final": {
+      "registros": 1437,
+      "marcas": 271,
+      "category_group": 12,
+      "subcategory": 70,
+      "sin_descuento": 958,
+      "promocionados": 479
+    },
+    "nota": "Las cifras analíticas oficiales son las del dataset final (1437). La diferencia se debe al único registro fuera de alcance (SAN SEN, Frutas y Verduras / Verduras Orientales, sin rebaja)."
+  },
+  "tablas_calidad": {
+    "perfil_raw": [
+      {
+        "variable": "sku",
+        "dtype": "str",
+        "n_unicos": 1438,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "brand",
+        "dtype": "str",
+        "n_unicos": 275,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "name",
+        "dtype": "str",
+        "n_unicos": 1438,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "category",
+        "dtype": "str",
+        "n_unicos": 71,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "seller",
+        "dtype": "str",
+        "n_unicos": 1,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "stock",
+        "dtype": "bool",
+        "n_unicos": 1,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "presentation",
+        "dtype": "str",
+        "n_unicos": 464,
+        "n_nulos": 138,
+        "pct_nulos": 9.6
+      },
+      {
+        "variable": "current_price",
+        "dtype": "float64",
+        "n_unicos": 275,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "regular_price",
+        "dtype": "float64",
+        "n_unicos": 285,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "discount",
+        "dtype": "float64",
+        "n_unicos": 1,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "product_url",
+        "dtype": "str",
+        "n_unicos": 1438,
+        "n_nulos": 0,
+        "pct_nulos": 0.0
+      },
+      {
+        "variable": "image_url",
+        "dtype": "str",
+        "n_unicos": 79,
+        "n_nulos": 1359,
+        "pct_nulos": 94.51
+      }
+    ],
+    "reglas_dominio": [
+      {
+        "regla": "current_price > 0",
+        "n_incumple": 0,
+        "pct_incumple": 0.0
+      },
+      {
+        "regla": "regular_price > 0",
+        "n_incumple": 0,
+        "pct_incumple": 0.0
+      },
+      {
+        "regla": "current_price <= regular_price",
+        "n_incumple": 0,
+        "pct_incumple": 0.0
+      },
+      {
+        "regla": "0 <= discount <= 100 (almacenado)",
+        "n_incumple": 0,
+        "pct_incumple": 0.0
+      },
+      {
+        "regla": "discount almacenado = 0 pero current_price < regular_price",
+        "n_incumple": 479,
+        "pct_incumple": 33.31
+      },
+      {
+        "regla": "discount almacenado coherente con el calculable (|dif| <= 1 p.p.)",
+        "n_incumple": 478,
+        "pct_incumple": 33.24
+      }
+    ],
+    "control_integracion": [
+      {
+        "registros_antes": 1438,
+        "duplicados_sku": 0,
+        "eliminados": 0,
+        "registros_despues": 1438
+      }
+    ],
+    "faltantes": [
+      {
+        "variable": "presentation",
+        "n_nulos": 138,
+        "pct_nulos": 9.6,
+        "relevancia": "Media: describe el envase/tamaño",
+        "mecanismo_plausible": "No aleatorio (ver 4.1): el faltante se asocia a productos con rebaja y a Packs; la información sí está en el nombre",
+        "tratamiento": "Imputación por regex desde name + flag presentation_imputed"
+      },
+      {
+        "variable": "image_url",
+        "n_nulos": 1359,
+        "pct_nulos": 94.51,
+        "relevancia": "Baja: solo trazabilidad visual",
+        "mecanismo_plausible": "Técnico: lazy-loading de imágenes; Selenium no hizo scroll hasta cada tarjeta (hipótesis)",
+        "tratamiento": "Sin imputación; se excluye del dataset analítico"
+      }
+    ],
+    "espacios_texto": [
+      {
+        "variable": "sku",
+        "espacios_extremos": 0,
+        "dobles_espacios": 0
+      },
+      {
+        "variable": "brand",
+        "espacios_extremos": 0,
+        "dobles_espacios": 0
+      },
+      {
+        "variable": "name",
+        "espacios_extremos": 0,
+        "dobles_espacios": 5
+      },
+      {
+        "variable": "category",
+        "espacios_extremos": 0,
+        "dobles_espacios": 0
+      },
+      {
+        "variable": "seller",
+        "espacios_extremos": 0,
+        "dobles_espacios": 0
+      },
+      {
+        "variable": "presentation",
+        "espacios_extremos": 0,
+        "dobles_espacios": 8
+      },
+      {
+        "variable": "product_url",
+        "espacios_extremos": 0,
+        "dobles_espacios": 0
+      }
+    ],
+    "apostrofo_marcas": [
+      {
+        "marca_publicada": "CRICKET S",
+        "n": 8,
+        "escritura_en_name": "CRICKETS",
+        "ejemplo_name": "Chifles CRICKETS Sabor a Leche de Tigre Bolsa 250g"
+      },
+      {
+        "marca_publicada": "HELLMANN S",
+        "n": 5,
+        "escritura_en_name": "HELLMANN'S",
+        "ejemplo_name": "Mayonesa Clásica HELLMANN'S Doypack 475g"
+      },
+      {
+        "marca_publicada": "LIBBY S",
+        "n": 10,
+        "escritura_en_name": "LIBBY'S",
+        "ejemplo_name": "Mayonesa LIBBY'S Doypack 100g"
+      },
+      {
+        "marca_publicada": "SNYDER S",
+        "n": 1,
+        "escritura_en_name": "SNYDER'S",
+        "ejemplo_name": "Piqueo SNYDER'S PRETZELS Snaps bajo en grasa Bolsa 255Gr"
+      }
+    ],
+    "variantes_marca": {
+      "CASAVERDE": "CASA VERDE",
+      "LAYS": "LAY'S",
+      "NESTLE": "NESTLÉ"
+    },
+    "imputados_por_grupo": [
+      {
+        "category_group": "Packs Abarrotes",
+        "n_no_imputado": 23,
+        "n_imputado": 37,
+        "n": 60,
+        "pct_imputado": 61.7
+      },
+      {
+        "category_group": "Fideos, Pastas y Salsas",
+        "n_no_imputado": 109,
+        "n_imputado": 31,
+        "n": 140,
+        "pct_imputado": 22.1
+      },
+      {
+        "category_group": "Snacks y Piqueos",
+        "n_no_imputado": 210,
+        "n_imputado": 18,
+        "n": 228,
+        "pct_imputado": 7.9
+      },
+      {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n_no_imputado": 290,
+        "n_imputado": 15,
+        "n": 305,
+        "pct_imputado": 4.9
+      },
+      {
+        "category_group": "Chocolatería",
+        "n_no_imputado": 104,
+        "n_imputado": 11,
+        "n": 115,
+        "pct_imputado": 9.6
+      },
+      {
+        "category_group": "Galletas y Golosinas",
+        "n_no_imputado": 243,
+        "n_imputado": 11,
+        "n": 254,
+        "pct_imputado": 4.3
+      },
+      {
+        "category_group": "Conservas",
+        "n_no_imputado": 113,
+        "n_imputado": 7,
+        "n": 120,
+        "pct_imputado": 5.8
+      },
+      {
+        "category_group": "Azúcar y Endulzantes",
+        "n_no_imputado": 37,
+        "n_imputado": 5,
+        "n": 42,
+        "pct_imputado": 11.9
+      },
+      {
+        "category_group": "Arroz",
+        "n_no_imputado": 33,
+        "n_imputado": 1,
+        "n": 34,
+        "pct_imputado": 2.9
+      },
+      {
+        "category_group": "Verduras",
+        "n_no_imputado": 0,
+        "n_imputado": 1,
+        "n": 1,
+        "pct_imputado": 100.0
+      },
+      {
+        "category_group": "Comidas Instantáneas",
+        "n_no_imputado": 37,
+        "n_imputado": 1,
+        "n": 38,
+        "pct_imputado": 2.6
+      },
+      {
+        "category_group": "Aceite",
+        "n_no_imputado": 58,
+        "n_imputado": 0,
+        "n": 58,
+        "pct_imputado": 0.0
+      },
+      {
+        "category_group": "Menestras",
+        "n_no_imputado": 43,
+        "n_imputado": 0,
+        "n": 43,
+        "pct_imputado": 0.0
+      }
+    ]
+  },
+  "figuras_02": {
+    "fig01_valores_faltantes.png": {
+      "titulo": "Porcentaje de valores faltantes por variable (dataset raw)",
+      "notebook": "02_preprocessing.ipynb",
+      "pregunta": "Preprocesamiento: ¿qué variables tienen faltantes y en qué proporción?",
+      "hallazgo_cifra": "image_url 94,5 % y presentation 9,6 % de nulos; las demás variables, 0 %",
+      "n": 1438
+    },
+    "figA1_outliers_precio_actual.png": {
+      "titulo": "Outliers del precio actual según el criterio IQR (n = 1438)",
+      "notebook": "02_preprocessing.ipynb",
+      "pregunta": "Preprocesamiento: ¿existen precios actuales atípicos?",
+      "hallazgo_cifra": "Límite superior S/ 27,34; 74 outliers (5,15 %) conservados y marcados",
+      "n": 1438
+    },
+    "figA2_outliers_precio_regular.png": {
+      "titulo": "Outliers del precio regular según el criterio IQR (n = 1438)",
+      "notebook": "02_preprocessing.ipynb",
+      "pregunta": "Preprocesamiento: ¿existen precios regulares atípicos?",
+      "hallazgo_cifra": "Límite superior S/ 28,57; 74 outliers; máximo S/ 105,00",
+      "n": 1438
+    },
+    "figA3_outliers_descuento_pct.png": {
+      "titulo": "Outliers del descuento entre productos con rebaja según el criterio IQR (n = 479)",
+      "notebook": "02_preprocessing.ipynb",
+      "pregunta": "Preprocesamiento: ¿existen descuentos atípicos?",
+      "hallazgo_cifra": "Límite superior 34,63 %; 6 de 479 outliers (1,25 %); máximo 38,14 %",
+      "n": 479
+    }
+  }
+}

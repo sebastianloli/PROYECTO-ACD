@@ -1,0 +1,13 @@
+category_group,n,precio_mediano,promo_rate,n_promo,descuento_mediano_promocionados,mediana_referencial,pct_alto
+Packs Abarrotes,60,9.7,100.0,60,19.85,False,43.3
+Arroz,34,16.95,61.8,21,10.26,False,8.8
+"Fideos, Pastas y Salsas",140,3.95,52.9,74,15.74,False,7.9
+Galletas y Golosinas,254,5.5,33.9,86,11.93,False,9.1
+Chocolatería,115,14.9,29.6,34,20.14,False,16.5
+Aceite,58,25.45,29.3,17,12.92,False,0.0
+Menestras,43,5.6,27.9,12,20.0,False,9.3
+Conservas,120,8.9,25.8,31,10.17,False,3.3
+Snacks y Piqueos,228,7.9,25.0,57,14.49,False,5.3
+"Salsas, Cremas y Condimentos",305,8.0,24.3,74,11.95,False,5.6
+Azúcar y Endulzantes,42,19.75,21.4,9,16.75,False,4.8
+Comidas Instantáneas,38,4.15,10.5,4,4.82,True,0.0

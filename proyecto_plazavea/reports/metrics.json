@@ -1,0 +1,3389 @@
+{
+  "dataset": {
+    "n_productos": 1437,
+    "n_columnas": 21,
+    "n_marcas": 271,
+    "n_category_group": 12,
+    "n_subcategorias": 70,
+    "n_promocionados": 479,
+    "n_sin_descuento": 958,
+    "base": "Dataset analítico final (in_scope): cifras oficiales del informe"
+  },
+  "precio_actual": {
+    "n": 1437,
+    "media": 10.71,
+    "mediana": 7.9,
+    "desv_estandar": 9.5,
+    "q1": 4.9,
+    "q3": 13.9,
+    "iqr": 9.0,
+    "min": 0.8,
+    "max": 89.2,
+    "skew": 2.79,
+    "pct_hasta_10_soles": 64.23,
+    "pct_hasta_20_soles": 88.24,
+    "n_outliers_iqr": 74,
+    "pct_outliers_iqr": 5.15,
+    "lim_sup_iqr_preprocesamiento": 27.34,
+    "iqr_preprocesamiento": 8.98,
+    "n_base_iqr_preprocesamiento": 1438,
+    "media_menos_mediana": 2.81,
+    "regular_media": 11.34,
+    "regular_mediana": 8.5,
+    "regular_skew": 2.86
+  },
+  "precio_por_category_group": {
+    "Aceite": {
+      "n": 58,
+      "mediana": 25.45,
+      "media": 28.56,
+      "desv_estandar": 16.87,
+      "q1": 15.9,
+      "q3": 38.65,
+      "iqr": 22.75,
+      "maximo": 79.9
+    },
+    "Azúcar y Endulzantes": {
+      "n": 42,
+      "mediana": 19.75,
+      "media": 22.3,
+      "desv_estandar": 16.78,
+      "q1": 11.22,
+      "q3": 25.82,
+      "iqr": 14.6,
+      "maximo": 89.2
+    },
+    "Arroz": {
+      "n": 34,
+      "mediana": 16.95,
+      "media": 15.55,
+      "desv_estandar": 11.8,
+      "q1": 4.58,
+      "q3": 21.35,
+      "iqr": 16.77,
+      "maximo": 47.9
+    },
+    "Chocolatería": {
+      "n": 115,
+      "mediana": 14.9,
+      "media": 16.18,
+      "desv_estandar": 11.19,
+      "q1": 7.9,
+      "q3": 22.1,
+      "iqr": 14.2,
+      "maximo": 65.0
+    },
+    "Packs Abarrotes": {
+      "n": 60,
+      "mediana": 9.7,
+      "media": 11.04,
+      "desv_estandar": 3.99,
+      "q1": 8.5,
+      "q3": 13.05,
+      "iqr": 4.55,
+      "maximo": 27.5
+    },
+    "Conservas": {
+      "n": 120,
+      "mediana": 8.9,
+      "media": 10.6,
+      "desv_estandar": 7.62,
+      "q1": 5.9,
+      "q3": 12.9,
+      "iqr": 7.0,
+      "maximo": 69.0
+    },
+    "Salsas, Cremas y Condimentos": {
+      "n": 305,
+      "mediana": 8.0,
+      "media": 9.84,
+      "desv_estandar": 6.96,
+      "q1": 4.5,
+      "q3": 13.4,
+      "iqr": 8.9,
+      "maximo": 36.2
+    },
+    "Snacks y Piqueos": {
+      "n": 228,
+      "mediana": 7.9,
+      "media": 9.07,
+      "desv_estandar": 6.36,
+      "q1": 5.9,
+      "q3": 9.9,
+      "iqr": 4.0,
+      "maximo": 54.9
+    },
+    "Menestras": {
+      "n": 43,
+      "mediana": 5.6,
+      "media": 5.86,
+      "desv_estandar": 1.85,
+      "q1": 4.7,
+      "q3": 6.9,
+      "iqr": 2.2,
+      "maximo": 10.2
+    },
+    "Galletas y Golosinas": {
+      "n": 254,
+      "mediana": 5.5,
+      "media": 7.8,
+      "desv_estandar": 6.22,
+      "q1": 4.22,
+      "q3": 8.9,
+      "iqr": 4.68,
+      "maximo": 50.0
+    },
+    "Comidas Instantáneas": {
+      "n": 38,
+      "mediana": 4.15,
+      "media": 6.01,
+      "desv_estandar": 4.52,
+      "q1": 2.7,
+      "q3": 7.5,
+      "iqr": 4.8,
+      "maximo": 19.5
+    },
+    "Fideos, Pastas y Salsas": {
+      "n": 140,
+      "mediana": 3.95,
+      "media": 6.7,
+      "desv_estandar": 5.95,
+      "q1": 1.8,
+      "q3": 10.05,
+      "iqr": 8.25,
+      "maximo": 22.9
+    }
+  },
+  "precio_unitario": {
+    "n_content_validated": 1326,
+    "n_base_unidad_predominante": 1174,
+    "n_subcategorias_n15": 32,
+    "ratio_q3_q1_mediana": 1.9,
+    "ratio_q3_q1_min": 1.2,
+    "ratio_q3_q1_max": 9.35,
+    "subcategoria_mayor_ratio_q3_q1": "Sal y Pimienta",
+    "subcategoria_menor_ratio_q3_q1": "Arroz Extra",
+    "detalle": {
+      "Arroz Extra": {
+        "category_group": "Arroz",
+        "unidad": "S/ por kg",
+        "n": 22,
+        "q1": 4.0,
+        "mediana": 4.32,
+        "q3": 4.8,
+        "minimo": 3.19,
+        "maximo": 6.0,
+        "ratio_q3_q1": 1.2,
+        "ratio_max_min": 1.9
+      },
+      "Fideos Largos": {
+        "category_group": "Fideos, Pastas y Salsas",
+        "unidad": "S/ por kg",
+        "n": 38,
+        "q1": 5.04,
+        "mediana": 6.0,
+        "q3": 6.44,
+        "minimo": 3.9,
+        "maximo": 91.6,
+        "ratio_q3_q1": 1.28,
+        "ratio_max_min": 23.5
+      },
+      "Fideos Cortos": {
+        "category_group": "Fideos, Pastas y Salsas",
+        "unidad": "S/ por kg",
+        "n": 45,
+        "q1": 6.0,
+        "mediana": 6.8,
+        "q3": 8.0,
+        "minimo": 5.2,
+        "maximo": 64.0,
+        "ratio_q3_q1": 1.33,
+        "ratio_max_min": 12.3
+      },
+      "Salsas de Tomate": {
+        "category_group": "Fideos, Pastas y Salsas",
+        "unidad": "S/ por kg",
+        "n": 23,
+        "q1": 11.76,
+        "mediana": 14.86,
+        "q3": 18.62,
+        "minimo": 7.4,
+        "maximo": 33.75,
+        "ratio_q3_q1": 1.58,
+        "ratio_max_min": 4.6
+      },
+      "Vinagre": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por litro",
+        "n": 23,
+        "q1": 4.95,
+        "mediana": 16.6,
+        "q3": 28.9,
+        "minimo": 2.89,
+        "maximo": 51.6,
+        "ratio_q3_q1": 5.84,
+        "ratio_max_min": 17.9
+      },
+      "Sal y Pimienta": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por kg",
+        "n": 37,
+        "q1": 13.8,
+        "mediana": 20.8,
+        "q3": 129.0,
+        "minimo": 1.9,
+        "maximo": 270.0,
+        "ratio_q3_q1": 9.35,
+        "ratio_max_min": 142.1
+      },
+      "Sillao": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por litro",
+        "n": 24,
+        "q1": 13.06,
+        "mediana": 25.8,
+        "q3": 43.85,
+        "minimo": 7.0,
+        "maximo": 210.0,
+        "ratio_q3_q1": 3.36,
+        "ratio_max_min": 30.0
+      },
+      "Ketchup": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por kg",
+        "n": 15,
+        "q1": 21.32,
+        "mediana": 26.35,
+        "q3": 41.23,
+        "minimo": 14.0,
+        "maximo": 75.45,
+        "ratio_q3_q1": 1.93,
+        "ratio_max_min": 5.4
+      },
+      "Verduras en Conserva": {
+        "category_group": "Conservas",
+        "unidad": "S/ por kg",
+        "n": 15,
+        "q1": 24.65,
+        "mediana": 28.91,
+        "q3": 35.7,
+        "minimo": 16.24,
+        "maximo": 59.0,
+        "ratio_q3_q1": 1.45,
+        "ratio_max_min": 3.6
+      },
+      "Mayonesa": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por kg",
+        "n": 27,
+        "q1": 24.24,
+        "mediana": 33.62,
+        "q3": 37.66,
+        "minimo": 13.9,
+        "maximo": 66.33,
+        "ratio_q3_q1": 1.55,
+        "ratio_max_min": 4.8
+      },
+      "Sémola y Fideos Especiales": {
+        "category_group": "Fideos, Pastas y Salsas",
+        "unidad": "S/ por kg",
+        "n": 27,
+        "q1": 22.3,
+        "mediana": 33.8,
+        "q3": 54.88,
+        "minimo": 5.5,
+        "maximo": 94.71,
+        "ratio_q3_q1": 2.46,
+        "ratio_max_min": 17.2
+      },
+      "Salsas especiales": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por kg",
+        "n": 30,
+        "q1": 32.16,
+        "mediana": 36.7,
+        "q3": 59.5,
+        "minimo": 17.35,
+        "maximo": 460.71,
+        "ratio_q3_q1": 1.85,
+        "ratio_max_min": 26.6
+      },
+      "Ají y Rocoto": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por kg",
+        "n": 22,
+        "q1": 30.75,
+        "mediana": 37.35,
+        "q3": 40.06,
+        "minimo": 25.83,
+        "maximo": 126.0,
+        "ratio_q3_q1": 1.3,
+        "ratio_max_min": 4.9
+      },
+      "Otras Golosinas": {
+        "category_group": "Galletas y Golosinas",
+        "unidad": "S/ por kg",
+        "n": 16,
+        "q1": 28.44,
+        "mediana": 37.91,
+        "q3": 110.1,
+        "minimo": 17.0,
+        "maximo": 162.4,
+        "ratio_q3_q1": 3.87,
+        "ratio_max_min": 9.6
+      },
+      "Pescados en Conserva": {
+        "category_group": "Conservas",
+        "unidad": "S/ por kg",
+        "n": 33,
+        "q1": 34.67,
+        "mediana": 39.33,
+        "q3": 42.14,
+        "minimo": 27.14,
+        "maximo": 149.17,
+        "ratio_q3_q1": 1.22,
+        "ratio_max_min": 5.5
+      },
+      "Galletas Saladas": {
+        "category_group": "Galletas y Golosinas",
+        "unidad": "S/ por kg",
+        "n": 24,
+        "q1": 26.59,
+        "mediana": 40.0,
+        "q3": 48.43,
+        "minimo": 11.6,
+        "maximo": 107.5,
+        "ratio_q3_q1": 1.82,
+        "ratio_max_min": 9.3
+      },
+      "Maní, Habas, Pistachos y Semillas": {
+        "category_group": "Snacks y Piqueos",
+        "unidad": "S/ por kg",
+        "n": 19,
+        "q1": 33.33,
+        "mediana": 42.0,
+        "q3": 64.16,
+        "minimo": 30.0,
+        "maximo": 354.19,
+        "ratio_q3_q1": 1.93,
+        "ratio_max_min": 11.8
+      },
+      "Aceitunas en Conserva": {
+        "category_group": "Conservas",
+        "unidad": "S/ por kg",
+        "n": 23,
+        "q1": 32.92,
+        "mediana": 42.5,
+        "q3": 44.61,
+        "minimo": 22.06,
+        "maximo": 67.73,
+        "ratio_q3_q1": 1.36,
+        "ratio_max_min": 3.1
+      },
+      "Camotes, Chifles y Yucas": {
+        "category_group": "Snacks y Piqueos",
+        "unidad": "S/ por kg",
+        "n": 33,
+        "q1": 39.6,
+        "mediana": 46.0,
+        "q3": 60.0,
+        "minimo": 30.4,
+        "maximo": 83.33,
+        "ratio_q3_q1": 1.52,
+        "ratio_max_min": 2.7
+      },
+      "Maíz": {
+        "category_group": "Snacks y Piqueos",
+        "unidad": "S/ por kg",
+        "n": 36,
+        "q1": 35.03,
+        "mediana": 46.12,
+        "q3": 53.32,
+        "minimo": 22.0,
+        "maximo": 129.0,
+        "ratio_q3_q1": 1.52,
+        "ratio_max_min": 5.9
+      },
+      "Papas": {
+        "category_group": "Snacks y Piqueos",
+        "unidad": "S/ por kg",
+        "n": 38,
+        "q1": 43.9,
+        "mediana": 50.37,
+        "q3": 58.52,
+        "minimo": 37.68,
+        "maximo": 83.33,
+        "ratio_q3_q1": 1.33,
+        "ratio_max_min": 2.2
+      },
+      "Sopas": {
+        "category_group": "Comidas Instantáneas",
+        "unidad": "S/ por kg",
+        "n": 21,
+        "q1": 23.75,
+        "mediana": 53.6,
+        "q3": 68.0,
+        "minimo": 23.75,
+        "maximo": 128.21,
+        "ratio_q3_q1": 2.86,
+        "ratio_max_min": 5.4
+      },
+      "Mostaza": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por kg",
+        "n": 20,
+        "q1": 21.06,
+        "mediana": 55.65,
+        "q3": 72.4,
+        "minimo": 12.08,
+        "maximo": 112.97,
+        "ratio_q3_q1": 3.44,
+        "ratio_max_min": 9.4
+      },
+      "Piqueos Mixtos": {
+        "category_group": "Snacks y Piqueos",
+        "unidad": "S/ por kg",
+        "n": 28,
+        "q1": 45.09,
+        "mediana": 59.0,
+        "q3": 85.0,
+        "minimo": 33.03,
+        "maximo": 170.0,
+        "ratio_q3_q1": 1.89,
+        "ratio_max_min": 5.1
+      },
+      "Aceite de Oliva": {
+        "category_group": "Aceite",
+        "unidad": "S/ por litro",
+        "n": 29,
+        "q1": 48.9,
+        "mediana": 59.9,
+        "q3": 74.5,
+        "minimo": 19.9,
+        "maximo": 99.5,
+        "ratio_q3_q1": 1.52,
+        "ratio_max_min": 5.0
+      },
+      "Frutos Secos": {
+        "category_group": "Snacks y Piqueos",
+        "unidad": "S/ por kg",
+        "n": 51,
+        "q1": 51.34,
+        "mediana": 63.33,
+        "q3": 98.38,
+        "minimo": 27.5,
+        "maximo": 235.43,
+        "ratio_q3_q1": 1.92,
+        "ratio_max_min": 8.6
+      },
+      "Caramelos y Chupetes": {
+        "category_group": "Galletas y Golosinas",
+        "unidad": "S/ por kg",
+        "n": 38,
+        "q1": 21.65,
+        "mediana": 64.04,
+        "q3": 178.23,
+        "minimo": 15.61,
+        "maximo": 328.87,
+        "ratio_q3_q1": 8.23,
+        "ratio_max_min": 21.1
+      },
+      "Gomitas y Gomas de Mascar": {
+        "category_group": "Galletas y Golosinas",
+        "unidad": "S/ por kg",
+        "n": 30,
+        "q1": 38.89,
+        "mediana": 65.34,
+        "q3": 93.75,
+        "minimo": 23.02,
+        "maximo": 206.67,
+        "ratio_q3_q1": 2.41,
+        "ratio_max_min": 9.0
+      },
+      "Chocolates y Lentejas": {
+        "category_group": "Chocolatería",
+        "unidad": "S/ por kg",
+        "n": 49,
+        "q1": 85.0,
+        "mediana": 109.76,
+        "q3": 174.17,
+        "minimo": 57.14,
+        "maximo": 2590.0,
+        "ratio_q3_q1": 2.05,
+        "ratio_max_min": 45.3
+      },
+      "Otros Condimentos": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "unidad": "S/ por kg",
+        "n": 27,
+        "q1": 39.86,
+        "mediana": 139.0,
+        "q3": 188.72,
+        "minimo": 23.2,
+        "maximo": 750.0,
+        "ratio_q3_q1": 4.73,
+        "ratio_max_min": 32.3
+      },
+      "Bombones": {
+        "category_group": "Chocolatería",
+        "unidad": "S/ por kg",
+        "n": 16,
+        "q1": 65.84,
+        "mediana": 152.26,
+        "q3": 229.23,
+        "minimo": 51.25,
+        "maximo": 578.0,
+        "ratio_q3_q1": 3.48,
+        "ratio_max_min": 11.3
+      },
+      "Tabletas de Chocolate": {
+        "category_group": "Chocolatería",
+        "unidad": "S/ por kg",
+        "n": 18,
+        "q1": 104.65,
+        "mediana": 186.14,
+        "q3": 282.86,
+        "minimo": 65.0,
+        "maximo": 310.0,
+        "ratio_q3_q1": 2.7,
+        "ratio_max_min": 4.8
+      }
+    }
+  },
+  "frecuencia_promocional": {
+    "n_promocionados": 479,
+    "n_total": 1437,
+    "promo_rate_global_pct": 33.33,
+    "ic95_global": [
+      30.9,
+      35.8
+    ],
+    "n_sin_packs": 1377,
+    "n_promo_sin_packs": 419,
+    "promo_rate_sin_packs_pct": 30.43
+  },
+  "promo_rate_por_category_group": {
+    "Packs Abarrotes": {
+      "n": 60,
+      "n_promo": 60,
+      "promo_rate_pct": 100.0,
+      "ic95_inf": 94.0,
+      "ic95_sup": 100.0,
+      "vs_global": "sobre la tasa global"
+    },
+    "Arroz": {
+      "n": 34,
+      "n_promo": 21,
+      "promo_rate_pct": 61.8,
+      "ic95_inf": 45.0,
+      "ic95_sup": 76.1,
+      "vs_global": "sobre la tasa global"
+    },
+    "Fideos, Pastas y Salsas": {
+      "n": 140,
+      "n_promo": 74,
+      "promo_rate_pct": 52.9,
+      "ic95_inf": 44.6,
+      "ic95_sup": 60.9,
+      "vs_global": "sobre la tasa global"
+    },
+    "Galletas y Golosinas": {
+      "n": 254,
+      "n_promo": 86,
+      "promo_rate_pct": 33.9,
+      "ic95_inf": 28.3,
+      "ic95_sup": 39.9,
+      "vs_global": "sobre la tasa global"
+    },
+    "Chocolatería": {
+      "n": 115,
+      "n_promo": 34,
+      "promo_rate_pct": 29.6,
+      "ic95_inf": 22.0,
+      "ic95_sup": 38.5,
+      "vs_global": "bajo la tasa global"
+    },
+    "Aceite": {
+      "n": 58,
+      "n_promo": 17,
+      "promo_rate_pct": 29.3,
+      "ic95_inf": 19.2,
+      "ic95_sup": 42.0,
+      "vs_global": "bajo la tasa global"
+    },
+    "Menestras": {
+      "n": 43,
+      "n_promo": 12,
+      "promo_rate_pct": 27.9,
+      "ic95_inf": 16.7,
+      "ic95_sup": 42.7,
+      "vs_global": "bajo la tasa global"
+    },
+    "Conservas": {
+      "n": 120,
+      "n_promo": 31,
+      "promo_rate_pct": 25.8,
+      "ic95_inf": 18.8,
+      "ic95_sup": 34.3,
+      "vs_global": "bajo la tasa global"
+    },
+    "Snacks y Piqueos": {
+      "n": 228,
+      "n_promo": 57,
+      "promo_rate_pct": 25.0,
+      "ic95_inf": 19.8,
+      "ic95_sup": 31.0,
+      "vs_global": "bajo la tasa global"
+    },
+    "Salsas, Cremas y Condimentos": {
+      "n": 305,
+      "n_promo": 74,
+      "promo_rate_pct": 24.3,
+      "ic95_inf": 19.8,
+      "ic95_sup": 29.4,
+      "vs_global": "bajo la tasa global"
+    },
+    "Azúcar y Endulzantes": {
+      "n": 42,
+      "n_promo": 9,
+      "promo_rate_pct": 21.4,
+      "ic95_inf": 11.7,
+      "ic95_sup": 35.9,
+      "vs_global": "bajo la tasa global"
+    },
+    "Comidas Instantáneas": {
+      "n": 38,
+      "n_promo": 4,
+      "promo_rate_pct": 10.5,
+      "ic95_inf": 4.2,
+      "ic95_sup": 24.1,
+      "vs_global": "bajo la tasa global"
+    }
+  },
+  "marcas_n10": {
+    "n_marcas": 32,
+    "n_productos": 697,
+    "pct_productos": 48.5,
+    "ancho_ic95_pp_n10_14": [
+      22.8,
+      51.9
+    ],
+    "nota_esperada": "promo_rate_esperada = promedio de la tasa de cada grupo de categoría ponderado por los productos de la marca en ese grupo",
+    "detalle": {
+      "PRIMOR": {
+        "n": 11,
+        "n_promo": 11,
+        "promo_rate_pct": 100.0,
+        "ic95_inf": 74.1,
+        "ic95_sup": 100.0,
+        "promo_rate_esperada_pct": 60.5,
+        "dif_obs_menos_esp_pp": 39.5,
+        "grupo_principal": "Packs Abarrotes",
+        "pct_en_grupo_principal": 45.5,
+        "descuento_mediano_pct": 20.59
+      },
+      "NICOLINI": {
+        "n": 14,
+        "n_promo": 13,
+        "promo_rate_pct": 92.9,
+        "ic95_inf": 68.5,
+        "ic95_sup": 98.7,
+        "promo_rate_esperada_pct": 50.8,
+        "dif_obs_menos_esp_pp": 42.1,
+        "grupo_principal": "Fideos, Pastas y Salsas",
+        "pct_en_grupo_principal": 92.9,
+        "descuento_mediano_pct": 11.76
+      },
+      "DON VITTORIO": {
+        "n": 24,
+        "n_promo": 22,
+        "promo_rate_pct": 91.7,
+        "ic95_inf": 74.2,
+        "ic95_sup": 97.7,
+        "promo_rate_esperada_pct": 54.8,
+        "dif_obs_menos_esp_pp": 36.9,
+        "grupo_principal": "Fideos, Pastas y Salsas",
+        "pct_en_grupo_principal": 95.8,
+        "descuento_mediano_pct": 15.25
+      },
+      "MOLITALIA": {
+        "n": 23,
+        "n_promo": 21,
+        "promo_rate_pct": 91.3,
+        "ic95_inf": 73.2,
+        "ic95_sup": 97.6,
+        "promo_rate_esperada_pct": 52.9,
+        "dif_obs_menos_esp_pp": 38.4,
+        "grupo_principal": "Fideos, Pastas y Salsas",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": 17.14
+      },
+      "ALACENA": {
+        "n": 30,
+        "n_promo": 27,
+        "promo_rate_pct": 90.0,
+        "ic95_inf": 74.4,
+        "ic95_sup": 96.5,
+        "promo_rate_esperada_pct": 36.9,
+        "dif_obs_menos_esp_pp": 53.1,
+        "grupo_principal": "Salsas, Cremas y Condimentos",
+        "pct_en_grupo_principal": 83.3,
+        "descuento_mediano_pct": 10.67
+      },
+      "OREO": {
+        "n": 14,
+        "n_promo": 12,
+        "promo_rate_pct": 85.7,
+        "ic95_inf": 60.1,
+        "ic95_sup": 96.0,
+        "promo_rate_esperada_pct": 62.2,
+        "dif_obs_menos_esp_pp": 23.5,
+        "grupo_principal": "Galletas y Golosinas",
+        "pct_en_grupo_principal": 57.1,
+        "descuento_mediano_pct": 8.65
+      },
+      "CASINO": {
+        "n": 13,
+        "n_promo": 11,
+        "promo_rate_pct": 84.6,
+        "ic95_inf": 57.8,
+        "ic95_sup": 95.7,
+        "promo_rate_esperada_pct": 49.1,
+        "dif_obs_menos_esp_pp": 35.5,
+        "grupo_principal": "Galletas y Golosinas",
+        "pct_en_grupo_principal": 76.9,
+        "descuento_mediano_pct": 10.91
+      },
+      "LAY'S": {
+        "n": 17,
+        "n_promo": 14,
+        "promo_rate_pct": 82.4,
+        "ic95_inf": 59.0,
+        "ic95_sup": 93.8,
+        "promo_rate_esperada_pct": 51.5,
+        "dif_obs_menos_esp_pp": 30.9,
+        "grupo_principal": "Snacks y Piqueos",
+        "pct_en_grupo_principal": 64.7,
+        "descuento_mediano_pct": 19.63
+      },
+      "VICTORIA": {
+        "n": 13,
+        "n_promo": 10,
+        "promo_rate_pct": 76.9,
+        "ic95_inf": 49.7,
+        "ic95_sup": 91.8,
+        "promo_rate_esperada_pct": 64.4,
+        "dif_obs_menos_esp_pp": 12.5,
+        "grupo_principal": "Galletas y Golosinas",
+        "pct_en_grupo_principal": 53.8,
+        "descuento_mediano_pct": 15.69
+      },
+      "LIBBY'S": {
+        "n": 10,
+        "n_promo": 7,
+        "promo_rate_pct": 70.0,
+        "ic95_inf": 39.7,
+        "ic95_sup": 89.2,
+        "promo_rate_esperada_pct": 24.3,
+        "dif_obs_menos_esp_pp": 45.7,
+        "grupo_principal": "Salsas, Cremas y Condimentos",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": 20.8
+      },
+      "NESTLÉ": {
+        "n": 12,
+        "n_promo": 8,
+        "promo_rate_pct": 66.7,
+        "ic95_inf": 39.1,
+        "ic95_sup": 86.2,
+        "promo_rate_esperada_pct": 30.3,
+        "dif_obs_menos_esp_pp": 36.4,
+        "grupo_principal": "Chocolatería",
+        "pct_en_grupo_principal": 83.3,
+        "descuento_mediano_pct": 20.8
+      },
+      "INKA CHIPS": {
+        "n": 14,
+        "n_promo": 9,
+        "promo_rate_pct": 64.3,
+        "ic95_inf": 38.8,
+        "ic95_sup": 83.7,
+        "promo_rate_esperada_pct": 25.0,
+        "dif_obs_menos_esp_pp": 39.3,
+        "grupo_principal": "Snacks y Piqueos",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": 12.82
+      },
+      "FIELD": {
+        "n": 17,
+        "n_promo": 10,
+        "promo_rate_pct": 58.8,
+        "ic95_inf": 36.0,
+        "ic95_sup": 78.4,
+        "promo_rate_esperada_pct": 57.2,
+        "dif_obs_menos_esp_pp": 1.6,
+        "grupo_principal": "Galletas y Golosinas",
+        "pct_en_grupo_principal": 64.7,
+        "descuento_mediano_pct": 15.69
+      },
+      "COSTEÑO": {
+        "n": 23,
+        "n_promo": 13,
+        "promo_rate_pct": 56.5,
+        "ic95_inf": 36.8,
+        "ic95_sup": 74.4,
+        "promo_rate_esperada_pct": 37.9,
+        "dif_obs_menos_esp_pp": 18.6,
+        "grupo_principal": "Menestras",
+        "pct_en_grupo_principal": 47.8,
+        "descuento_mediano_pct": 20.0
+      },
+      "LA IBERICA": {
+        "n": 11,
+        "n_promo": 5,
+        "promo_rate_pct": 45.5,
+        "ic95_inf": 21.3,
+        "ic95_sup": 72.0,
+        "promo_rate_esperada_pct": 30.0,
+        "dif_obs_menos_esp_pp": 15.5,
+        "grupo_principal": "Chocolatería",
+        "pct_en_grupo_principal": 90.9,
+        "descuento_mediano_pct": 13.12
+      },
+      "COSTA": {
+        "n": 41,
+        "n_promo": 18,
+        "promo_rate_pct": 43.9,
+        "ic95_inf": 29.9,
+        "ic95_sup": 59.0,
+        "promo_rate_esperada_pct": 33.1,
+        "dif_obs_menos_esp_pp": 10.8,
+        "grupo_principal": "Galletas y Golosinas",
+        "pct_en_grupo_principal": 82.9,
+        "descuento_mediano_pct": 20.87
+      },
+      "CLUB SOCIAL": {
+        "n": 10,
+        "n_promo": 4,
+        "promo_rate_pct": 40.0,
+        "ic95_inf": 16.8,
+        "ic95_sup": 68.7,
+        "promo_rate_esperada_pct": 60.3,
+        "dif_obs_menos_esp_pp": -20.3,
+        "grupo_principal": "Galletas y Golosinas",
+        "pct_en_grupo_principal": 60.0,
+        "descuento_mediano_pct": 16.33
+      },
+      "CAMPOMAR": {
+        "n": 12,
+        "n_promo": 4,
+        "promo_rate_pct": 33.3,
+        "ic95_inf": 13.8,
+        "ic95_sup": 60.9,
+        "promo_rate_esperada_pct": 25.8,
+        "dif_obs_menos_esp_pp": 7.5,
+        "grupo_principal": "Conservas",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": 10.82
+      },
+      "VALLEALTO": {
+        "n": 12,
+        "n_promo": 3,
+        "promo_rate_pct": 25.0,
+        "ic95_inf": 8.9,
+        "ic95_sup": 53.2,
+        "promo_rate_esperada_pct": 25.0,
+        "dif_obs_menos_esp_pp": 0.0,
+        "grupo_principal": "Snacks y Piqueos",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": 20.18
+      },
+      "FLORIDA": {
+        "n": 13,
+        "n_promo": 3,
+        "promo_rate_pct": 23.1,
+        "ic95_inf": 8.2,
+        "ic95_sup": 50.3,
+        "promo_rate_esperada_pct": 25.6,
+        "dif_obs_menos_esp_pp": -2.5,
+        "grupo_principal": "Conservas",
+        "pct_en_grupo_principal": 84.6,
+        "descuento_mediano_pct": 9.23
+      },
+      "BON O BON": {
+        "n": 11,
+        "n_promo": 2,
+        "promo_rate_pct": 18.2,
+        "ic95_inf": 5.1,
+        "ic95_sup": 47.7,
+        "promo_rate_esperada_pct": 30.7,
+        "dif_obs_menos_esp_pp": -12.5,
+        "grupo_principal": "Chocolatería",
+        "pct_en_grupo_principal": 72.7,
+        "descuento_mediano_pct": 19.54
+      },
+      "SIBARITA": {
+        "n": 27,
+        "n_promo": 4,
+        "promo_rate_pct": 14.8,
+        "ic95_inf": 5.9,
+        "ic95_sup": 32.5,
+        "promo_rate_esperada_pct": 24.3,
+        "dif_obs_menos_esp_pp": -9.5,
+        "grupo_principal": "Salsas, Cremas y Condimentos",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": 11.95
+      },
+      "AMBROSOLI": {
+        "n": 23,
+        "n_promo": 3,
+        "promo_rate_pct": 13.0,
+        "ic95_inf": 4.5,
+        "ic95_sup": 32.1,
+        "promo_rate_esperada_pct": 33.5,
+        "dif_obs_menos_esp_pp": -20.5,
+        "grupo_principal": "Galletas y Golosinas",
+        "pct_en_grupo_principal": 91.3,
+        "descuento_mediano_pct": 18.35
+      },
+      "AJINOMEN": {
+        "n": 16,
+        "n_promo": 2,
+        "promo_rate_pct": 12.5,
+        "ic95_inf": 3.5,
+        "ic95_sup": 36.0,
+        "promo_rate_esperada_pct": 10.5,
+        "dif_obs_menos_esp_pp": 2.0,
+        "grupo_principal": "Comidas Instantáneas",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": 3.93
+      },
+      "CASA VERDE": {
+        "n": 19,
+        "n_promo": 2,
+        "promo_rate_pct": 10.5,
+        "ic95_inf": 2.9,
+        "ic95_sup": 31.4,
+        "promo_rate_esperada_pct": 24.7,
+        "dif_obs_menos_esp_pp": -14.2,
+        "grupo_principal": "Salsas, Cremas y Condimentos",
+        "pct_en_grupo_principal": 42.1,
+        "descuento_mediano_pct": 7.38
+      },
+      "BELL'S": {
+        "n": 184,
+        "n_promo": 19,
+        "promo_rate_pct": 10.3,
+        "ic95_inf": 6.7,
+        "ic95_sup": 15.6,
+        "promo_rate_esperada_pct": 29.6,
+        "dif_obs_menos_esp_pp": -19.3,
+        "grupo_principal": "Salsas, Cremas y Condimentos",
+        "pct_en_grupo_principal": 24.5,
+        "descuento_mediano_pct": 8.6
+      },
+      "ARCOR": {
+        "n": 10,
+        "n_promo": 1,
+        "promo_rate_pct": 10.0,
+        "ic95_inf": 1.8,
+        "ic95_sup": 40.4,
+        "promo_rate_esperada_pct": 36.3,
+        "dif_obs_menos_esp_pp": -26.3,
+        "grupo_principal": "Galletas y Golosinas",
+        "pct_en_grupo_principal": 60.0,
+        "descuento_mediano_pct": 30.43
+      },
+      "EL OLIVAR": {
+        "n": 11,
+        "n_promo": 1,
+        "promo_rate_pct": 9.1,
+        "ic95_inf": 1.6,
+        "ic95_sup": 37.7,
+        "promo_rate_esperada_pct": 27.7,
+        "dif_obs_menos_esp_pp": -18.6,
+        "grupo_principal": "Aceite",
+        "pct_en_grupo_principal": 54.5,
+        "descuento_mediano_pct": 15.0
+      },
+      "VILLA NATURA": {
+        "n": 25,
+        "n_promo": 2,
+        "promo_rate_pct": 8.0,
+        "ic95_inf": 2.2,
+        "ic95_sup": 25.0,
+        "promo_rate_esperada_pct": 25.0,
+        "dif_obs_menos_esp_pp": -17.0,
+        "grupo_principal": "Snacks y Piqueos",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": 12.0
+      },
+      "TESORO DEL CAMPO": {
+        "n": 13,
+        "n_promo": 0,
+        "promo_rate_pct": 0.0,
+        "ic95_inf": 0.0,
+        "ic95_sup": 22.8,
+        "promo_rate_esperada_pct": 30.5,
+        "dif_obs_menos_esp_pp": -30.5,
+        "grupo_principal": "Menestras",
+        "pct_en_grupo_principal": 92.3,
+        "descuento_mediano_pct": null
+      },
+      "BARCIDDA": {
+        "n": 12,
+        "n_promo": 0,
+        "promo_rate_pct": 0.0,
+        "ic95_inf": 0.0,
+        "ic95_sup": 24.3,
+        "promo_rate_esperada_pct": 32.6,
+        "dif_obs_menos_esp_pp": -32.6,
+        "grupo_principal": "Salsas, Cremas y Condimentos",
+        "pct_en_grupo_principal": 66.7,
+        "descuento_mediano_pct": null
+      },
+      "TIYAPUY": {
+        "n": 12,
+        "n_promo": 0,
+        "promo_rate_pct": 0.0,
+        "ic95_inf": 0.0,
+        "ic95_sup": 24.3,
+        "promo_rate_esperada_pct": 25.0,
+        "dif_obs_menos_esp_pp": -25.0,
+        "grupo_principal": "Snacks y Piqueos",
+        "pct_en_grupo_principal": 100.0,
+        "descuento_mediano_pct": null
+      }
+    }
+  },
+  "sensibilidad_presentation_imputed": {
+    "Todos los productos": {
+      "n": 1437,
+      "n_promo": 479,
+      "promo_rate_pct": 33.33,
+      "ic95_inf": 30.9,
+      "ic95_sup": 35.8,
+      "dif_vs_todos_pp": 0.0
+    },
+    "Sin registros imputados": {
+      "n": 1300,
+      "n_promo": 403,
+      "promo_rate_pct": 31.0,
+      "ic95_inf": 28.5,
+      "ic95_sup": 33.6,
+      "dif_vs_todos_pp": -2.33
+    },
+    "Solo registros imputados": {
+      "n": 137,
+      "n_promo": 76,
+      "promo_rate_pct": 55.47,
+      "ic95_inf": 47.1,
+      "ic95_sup": 63.5,
+      "dif_vs_todos_pp": 22.14
+    },
+    "Sin Packs Abarrotes": {
+      "n": 1377,
+      "n_promo": 419,
+      "promo_rate_pct": 30.43,
+      "ic95_inf": 28.1,
+      "ic95_sup": 32.9,
+      "dif_vs_todos_pp": -2.9
+    },
+    "Sin Packs Abarrotes ni imputados": {
+      "n": 1277,
+      "n_promo": 380,
+      "promo_rate_pct": 29.76,
+      "ic95_inf": 27.3,
+      "ic95_sup": 32.3,
+      "dif_vs_todos_pp": -3.57
+    },
+    "prueba_imputados_vs_resto": {
+      "k1": 76,
+      "n1": 137,
+      "k2": 403,
+      "n2": 1300,
+      "tasa1_pct": 55.47,
+      "tasa2_pct": 31.0,
+      "chi2": 33.41,
+      "p_chi2": 7.47e-09,
+      "p_fisher": 2.12e-08
+    }
+  },
+  "magnitud_descuento_promocionados": {
+    "n": 479,
+    "media_pct": 15.45,
+    "mediana_pct": 14.71,
+    "q1_pct": 10.38,
+    "q3_pct": 20.08,
+    "iqr_pct": 9.7,
+    "min_pct": 0.69,
+    "max_pct": 38.14,
+    "skew_pct": 0.57,
+    "n_mayor_20_pct": 121,
+    "pct_mayor_20": 25.26,
+    "n_mayor_30_pct": 21,
+    "pct_mayor_30": 4.38,
+    "n_exacto_10": 11,
+    "n_exacto_20": 11,
+    "lim_sup_iqr_preprocesamiento": 34.63,
+    "n_outliers_iqr": 6,
+    "monto_media_soles": 1.89,
+    "monto_mediana_soles": 1.1,
+    "monto_q1_soles": 0.6,
+    "monto_q3_soles": 2.4,
+    "monto_max_soles": 15.8
+  },
+  "promotion_intensity": {
+    "Sin descuento": {
+      "n": 958,
+      "pct_total": 66.7,
+      "pct_promocionados": null
+    },
+    "Bajo": {
+      "n": 109,
+      "pct_total": 7.6,
+      "pct_promocionados": 22.8
+    },
+    "Medio": {
+      "n": 249,
+      "pct_total": 17.3,
+      "pct_promocionados": 52.0
+    },
+    "Alto": {
+      "n": 121,
+      "pct_total": 8.4,
+      "pct_promocionados": 25.3
+    }
+  },
+  "marcas": {
+    "n_marcas": 271,
+    "n_marcas_menos_10": 239,
+    "pct_productos_marcas_menos_10": 51.5,
+    "n_marcas_un_solo_producto": 76,
+    "top10_por_productos": {
+      "BELL'S": {
+        "n": 184,
+        "n_promo": 19,
+        "promo_rate_pct": 10.3
+      },
+      "COSTA": {
+        "n": 41,
+        "n_promo": 18,
+        "promo_rate_pct": 43.9
+      },
+      "ALACENA": {
+        "n": 30,
+        "n_promo": 27,
+        "promo_rate_pct": 90.0
+      },
+      "SIBARITA": {
+        "n": 27,
+        "n_promo": 4,
+        "promo_rate_pct": 14.8
+      },
+      "VILLA NATURA": {
+        "n": 25,
+        "n_promo": 2,
+        "promo_rate_pct": 8.0
+      },
+      "DON VITTORIO": {
+        "n": 24,
+        "n_promo": 22,
+        "promo_rate_pct": 91.7
+      },
+      "COSTEÑO": {
+        "n": 23,
+        "n_promo": 13,
+        "promo_rate_pct": 56.5
+      },
+      "MOLITALIA": {
+        "n": 23,
+        "n_promo": 21,
+        "promo_rate_pct": 91.3
+      },
+      "AMBROSOLI": {
+        "n": 23,
+        "n_promo": 3,
+        "promo_rate_pct": 13.0
+      },
+      "CASA VERDE": {
+        "n": 19,
+        "n_promo": 2,
+        "promo_rate_pct": 10.5
+      }
+    },
+    "top10_por_promociones": {
+      "ALACENA": {
+        "n": 30,
+        "n_promo": 27,
+        "promo_rate_pct": 90.0
+      },
+      "DON VITTORIO": {
+        "n": 24,
+        "n_promo": 22,
+        "promo_rate_pct": 91.7
+      },
+      "MOLITALIA": {
+        "n": 23,
+        "n_promo": 21,
+        "promo_rate_pct": 91.3
+      },
+      "BELL'S": {
+        "n": 184,
+        "n_promo": 19,
+        "promo_rate_pct": 10.3
+      },
+      "COSTA": {
+        "n": 41,
+        "n_promo": 18,
+        "promo_rate_pct": 43.9
+      },
+      "LAY'S": {
+        "n": 17,
+        "n_promo": 14,
+        "promo_rate_pct": 82.4
+      },
+      "COSTEÑO": {
+        "n": 23,
+        "n_promo": 13,
+        "promo_rate_pct": 56.5
+      },
+      "NICOLINI": {
+        "n": 14,
+        "n_promo": 13,
+        "promo_rate_pct": 92.9
+      },
+      "OREO": {
+        "n": 14,
+        "n_promo": 12,
+        "promo_rate_pct": 85.7
+      },
+      "CASINO": {
+        "n": 13,
+        "n_promo": 11,
+        "promo_rate_pct": 84.6
+      }
+    },
+    "descuento_mediano_marcas_npromo5": {
+      "SALMAS": {
+        "n_promo": 5,
+        "descuento_mediano_pct": 24.04
+      },
+      "TAKIS": {
+        "n_promo": 6,
+        "descuento_mediano_pct": 23.51
+      },
+      "VICTORIA GLACITAS": {
+        "n_promo": 6,
+        "descuento_mediano_pct": 22.64
+      },
+      "COSTA": {
+        "n_promo": 18,
+        "descuento_mediano_pct": 20.87
+      },
+      "NESTLÉ": {
+        "n_promo": 8,
+        "descuento_mediano_pct": 20.8
+      },
+      "LIBBY'S": {
+        "n_promo": 7,
+        "descuento_mediano_pct": 20.8
+      },
+      "PRIMOR": {
+        "n_promo": 11,
+        "descuento_mediano_pct": 20.59
+      },
+      "COSTEÑO": {
+        "n_promo": 13,
+        "descuento_mediano_pct": 20.0
+      },
+      "LAY'S": {
+        "n_promo": 14,
+        "descuento_mediano_pct": 19.63
+      },
+      "BARILLA": {
+        "n_promo": 5,
+        "descuento_mediano_pct": 19.26
+      },
+      "MAGGI": {
+        "n_promo": 6,
+        "descuento_mediano_pct": 17.78
+      },
+      "MOLITALIA": {
+        "n_promo": 21,
+        "descuento_mediano_pct": 17.14
+      },
+      "PICARAS": {
+        "n_promo": 5,
+        "descuento_mediano_pct": 16.67
+      },
+      "VICTORIA": {
+        "n_promo": 10,
+        "descuento_mediano_pct": 15.69
+      },
+      "FIELD": {
+        "n_promo": 10,
+        "descuento_mediano_pct": 15.69
+      },
+      "DON VITTORIO": {
+        "n_promo": 22,
+        "descuento_mediano_pct": 15.25
+      },
+      "LA IBERICA": {
+        "n_promo": 5,
+        "descuento_mediano_pct": 13.12
+      },
+      "INKA CHIPS": {
+        "n_promo": 9,
+        "descuento_mediano_pct": 12.82
+      },
+      "NICOLINI": {
+        "n_promo": 13,
+        "descuento_mediano_pct": 11.76
+      },
+      "MENTOS": {
+        "n_promo": 7,
+        "descuento_mediano_pct": 11.43
+      },
+      "VORAZ": {
+        "n_promo": 7,
+        "descuento_mediano_pct": 11.24
+      },
+      "CASINO": {
+        "n_promo": 11,
+        "descuento_mediano_pct": 10.91
+      },
+      "ALACENA": {
+        "n_promo": 27,
+        "descuento_mediano_pct": 10.67
+      },
+      "OREO": {
+        "n_promo": 12,
+        "descuento_mediano_pct": 8.65
+      },
+      "BELL'S": {
+        "n_promo": 19,
+        "descuento_mediano_pct": 8.6
+      }
+    },
+    "bells": {
+      "n": 184,
+      "pct_muestra": 12.8,
+      "n_promo": 19,
+      "promo_rate_pct": 10.33,
+      "n_promo_resto": 460,
+      "promo_rate_resto_pct": 36.71,
+      "n_resto": 1253,
+      "promo_rate_esperada_pct": 29.6,
+      "descuento_mediano_pct": 8.6,
+      "descuento_mediano_resto_pct": 15.0,
+      "n_category_group": 10,
+      "n_subcategorias": 53,
+      "prueba_vs_resto": {
+        "k1": 19,
+        "n1": 184,
+        "k2": 460,
+        "n2": 1253,
+        "tasa1_pct": 10.33,
+        "tasa2_pct": 36.71,
+        "chi2": 50.26,
+        "p_chi2": 1.34e-12,
+        "p_fisher": 2.31e-14
+      },
+      "grupos_con_n_bells_5": 9,
+      "grupos_bells_tasa_menor_que_resto": 7,
+      "por_grupo": {
+        "Salsas, Cremas y Condimentos": {
+          "n_bells": 45,
+          "n_promo_bells": 0,
+          "promo_rate_bells": 0.0,
+          "n_resto": 260,
+          "n_promo_resto": 74,
+          "promo_rate_resto": 28.5
+        },
+        "Snacks y Piqueos": {
+          "n_bells": 40,
+          "n_promo_bells": 0,
+          "promo_rate_bells": 0.0,
+          "n_resto": 188,
+          "n_promo_resto": 57,
+          "promo_rate_resto": 30.3
+        },
+        "Conservas": {
+          "n_bells": 23,
+          "n_promo_bells": 7,
+          "promo_rate_bells": 30.4,
+          "n_resto": 97,
+          "n_promo_resto": 24,
+          "promo_rate_resto": 24.7
+        },
+        "Menestras": {
+          "n_bells": 15,
+          "n_promo_bells": 2,
+          "promo_rate_bells": 13.3,
+          "n_resto": 28,
+          "n_promo_resto": 10,
+          "promo_rate_resto": 35.7
+        },
+        "Aceite": {
+          "n_bells": 14,
+          "n_promo_bells": 1,
+          "promo_rate_bells": 7.1,
+          "n_resto": 44,
+          "n_promo_resto": 16,
+          "promo_rate_resto": 36.4
+        },
+        "Fideos, Pastas y Salsas": {
+          "n_bells": 14,
+          "n_promo_bells": 0,
+          "promo_rate_bells": 0.0,
+          "n_resto": 126,
+          "n_promo_resto": 74,
+          "promo_rate_resto": 58.7
+        },
+        "Azúcar y Endulzantes": {
+          "n_bells": 13,
+          "n_promo_bells": 1,
+          "promo_rate_bells": 7.7,
+          "n_resto": 29,
+          "n_promo_resto": 8,
+          "promo_rate_resto": 27.6
+        },
+        "Galletas y Golosinas": {
+          "n_bells": 10,
+          "n_promo_bells": 2,
+          "promo_rate_bells": 20.0,
+          "n_resto": 244,
+          "n_promo_resto": 84,
+          "promo_rate_resto": 34.4
+        },
+        "Arroz": {
+          "n_bells": 9,
+          "n_promo_bells": 6,
+          "promo_rate_bells": 66.7,
+          "n_resto": 25,
+          "n_promo_resto": 15,
+          "promo_rate_resto": 60.0
+        }
+      },
+      "precio_unitario_vs_resto": {
+        "n_subcategorias": 10,
+        "n_subcategorias_bells_menor": 9,
+        "ratio_mediano": 0.81,
+        "ratio_min": 0.66,
+        "ratio_max": 1.18,
+        "detalle": {
+          "Sal y Pimienta": {
+            "unidad": "S/ por kg",
+            "n_bells": 7.0,
+            "n_resto": 30.0,
+            "mediana_bells": 13.8,
+            "mediana_resto": 20.9,
+            "ratio_bells_resto": 0.66
+          },
+          "Camotes, Chifles y Yucas": {
+            "unidad": "S/ por kg",
+            "n_bells": 6.0,
+            "n_resto": 27.0,
+            "mediana_bells": 35.77,
+            "mediana_resto": 52.67,
+            "ratio_bells_resto": 0.68
+          },
+          "Pescados en Conserva": {
+            "unidad": "S/ por kg",
+            "n_bells": 7.0,
+            "n_resto": 26.0,
+            "mediana_bells": 28.5,
+            "mediana_resto": 40.36,
+            "ratio_bells_resto": 0.71
+          },
+          "Fideos Cortos": {
+            "unidad": "S/ por kg",
+            "n_bells": 5.0,
+            "n_resto": 40.0,
+            "mediana_bells": 5.2,
+            "mediana_resto": 7.2,
+            "ratio_bells_resto": 0.72
+          },
+          "Aceite de Oliva": {
+            "unidad": "S/ por litro",
+            "n_bells": 5.0,
+            "n_resto": 24.0,
+            "mediana_bells": 47.0,
+            "mediana_resto": 63.0,
+            "ratio_bells_resto": 0.75
+          },
+          "Frutos Secos": {
+            "unidad": "S/ por kg",
+            "n_bells": 16.0,
+            "n_resto": 35.0,
+            "mediana_bells": 55.5,
+            "mediana_resto": 63.6,
+            "ratio_bells_resto": 0.87
+          },
+          "Papas": {
+            "unidad": "S/ por kg",
+            "n_bells": 7.0,
+            "n_resto": 31.0,
+            "mediana_bells": 43.7,
+            "mediana_resto": 50.37,
+            "ratio_bells_resto": 0.87
+          },
+          "Arroz Extra": {
+            "unidad": "S/ por kg",
+            "n_bells": 5.0,
+            "n_resto": 17.0,
+            "mediana_bells": 3.85,
+            "mediana_resto": 4.38,
+            "ratio_bells_resto": 0.88
+          },
+          "Aceitunas en Conserva": {
+            "unidad": "S/ por kg",
+            "n_bells": 9.0,
+            "n_resto": 14.0,
+            "mediana_bells": 41.92,
+            "mediana_resto": 42.6,
+            "ratio_bells_resto": 0.98
+          },
+          "Otros Condimentos": {
+            "unidad": "S/ por kg",
+            "n_bells": 7.0,
+            "n_resto": 20.0,
+            "mediana_bells": 145.0,
+            "mediana_resto": 122.42,
+            "ratio_bells_resto": 1.18
+          }
+        }
+      }
+    }
+  },
+  "resumen_por_category_group": {
+    "Packs Abarrotes": {
+      "n": 60,
+      "precio_mediano": 9.7,
+      "promo_rate_pct": 100.0,
+      "n_promo": 60,
+      "descuento_mediano_pct": 19.85,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 43.3
+    },
+    "Arroz": {
+      "n": 34,
+      "precio_mediano": 16.95,
+      "promo_rate_pct": 61.8,
+      "n_promo": 21,
+      "descuento_mediano_pct": 10.26,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 8.8
+    },
+    "Fideos, Pastas y Salsas": {
+      "n": 140,
+      "precio_mediano": 3.95,
+      "promo_rate_pct": 52.9,
+      "n_promo": 74,
+      "descuento_mediano_pct": 15.74,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 7.9
+    },
+    "Galletas y Golosinas": {
+      "n": 254,
+      "precio_mediano": 5.5,
+      "promo_rate_pct": 33.9,
+      "n_promo": 86,
+      "descuento_mediano_pct": 11.93,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 9.1
+    },
+    "Chocolatería": {
+      "n": 115,
+      "precio_mediano": 14.9,
+      "promo_rate_pct": 29.6,
+      "n_promo": 34,
+      "descuento_mediano_pct": 20.14,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 16.5
+    },
+    "Aceite": {
+      "n": 58,
+      "precio_mediano": 25.45,
+      "promo_rate_pct": 29.3,
+      "n_promo": 17,
+      "descuento_mediano_pct": 12.92,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 0.0
+    },
+    "Menestras": {
+      "n": 43,
+      "precio_mediano": 5.6,
+      "promo_rate_pct": 27.9,
+      "n_promo": 12,
+      "descuento_mediano_pct": 20.0,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 9.3
+    },
+    "Conservas": {
+      "n": 120,
+      "precio_mediano": 8.9,
+      "promo_rate_pct": 25.8,
+      "n_promo": 31,
+      "descuento_mediano_pct": 10.17,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 3.3
+    },
+    "Snacks y Piqueos": {
+      "n": 228,
+      "precio_mediano": 7.9,
+      "promo_rate_pct": 25.0,
+      "n_promo": 57,
+      "descuento_mediano_pct": 14.49,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 5.3
+    },
+    "Salsas, Cremas y Condimentos": {
+      "n": 305,
+      "precio_mediano": 8.0,
+      "promo_rate_pct": 24.3,
+      "n_promo": 74,
+      "descuento_mediano_pct": 11.95,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 5.6
+    },
+    "Azúcar y Endulzantes": {
+      "n": 42,
+      "precio_mediano": 19.75,
+      "promo_rate_pct": 21.4,
+      "n_promo": 9,
+      "descuento_mediano_pct": 16.75,
+      "mediana_referencial_n_promo_menor_5": false,
+      "pct_alto": 4.8
+    },
+    "Comidas Instantáneas": {
+      "n": 38,
+      "precio_mediano": 4.15,
+      "promo_rate_pct": 10.5,
+      "n_promo": 4,
+      "descuento_mediano_pct": 4.82,
+      "mediana_referencial_n_promo_menor_5": true,
+      "pct_alto": 0.0
+    }
+  },
+  "descuento_por_category_group": {
+    "grupos": [
+      "Conservas",
+      "Arroz",
+      "Galletas y Golosinas",
+      "Salsas, Cremas y Condimentos",
+      "Aceite",
+      "Snacks y Piqueos",
+      "Fideos, Pastas y Salsas",
+      "Azúcar y Endulzantes",
+      "Packs Abarrotes",
+      "Menestras",
+      "Chocolatería"
+    ],
+    "excluidos_n_promo_menor_5": [
+      "Comidas Instantáneas"
+    ],
+    "mediana_min": {
+      "grupo": "Conservas",
+      "valor": 10.17
+    },
+    "mediana_max": {
+      "grupo": "Chocolatería",
+      "valor": 20.14
+    }
+  },
+  "subcategorias_n15": {
+    "n_subcategorias": 36,
+    "n_productos": 1243,
+    "n_subcategorias_nivel3": 35,
+    "excluidas_grupo_sin_nivel3": [
+      "Packs Abarrotes"
+    ],
+    "top5": {
+      "Arroz Extra": {
+        "n": 22,
+        "n_promo": 17,
+        "promo_rate_pct": 77.3,
+        "ic95_inf": 56.6,
+        "ic95_sup": 89.9
+      },
+      "Fideos Cortos": {
+        "n": 46,
+        "n_promo": 30,
+        "promo_rate_pct": 65.2,
+        "ic95_inf": 50.8,
+        "ic95_sup": 77.3
+      },
+      "Fideos Largos": {
+        "n": 38,
+        "n_promo": 24,
+        "promo_rate_pct": 63.2,
+        "ic95_inf": 47.3,
+        "ic95_sup": 76.6
+      },
+      "Papas": {
+        "n": 44,
+        "n_promo": 22,
+        "promo_rate_pct": 50.0,
+        "ic95_inf": 35.8,
+        "ic95_sup": 64.2
+      },
+      "Galletas Dulces": {
+        "n": 106,
+        "n_promo": 51,
+        "promo_rate_pct": 48.1,
+        "ic95_inf": 38.8,
+        "ic95_sup": 57.5
+      }
+    },
+    "bottom5": {
+      "Caramelos y Chupetes": {
+        "n": 48,
+        "n_promo": 6,
+        "promo_rate_pct": 12.5,
+        "ic95_inf": 5.9,
+        "ic95_sup": 24.7
+      },
+      "Sopas": {
+        "n": 27,
+        "n_promo": 3,
+        "promo_rate_pct": 11.1,
+        "ic95_inf": 3.9,
+        "ic95_sup": 28.1
+      },
+      "Frutos Secos": {
+        "n": 51,
+        "n_promo": 5,
+        "promo_rate_pct": 9.8,
+        "ic95_inf": 4.3,
+        "ic95_sup": 21.0
+      },
+      "Tabletas de Chocolate": {
+        "n": 19,
+        "n_promo": 1,
+        "promo_rate_pct": 5.3,
+        "ic95_inf": 0.9,
+        "ic95_sup": 24.6
+      },
+      "Aceitunas en Conserva": {
+        "n": 24,
+        "n_promo": 0,
+        "promo_rate_pct": 0.0,
+        "ic95_inf": 0.0,
+        "ic95_sup": 13.8
+      }
+    },
+    "detalle": {
+      "Packs Abarrotes": {
+        "category_group": "Packs Abarrotes",
+        "n": 60,
+        "n_promo": 60,
+        "promo_rate_pct": 100.0
+      },
+      "Arroz Extra": {
+        "category_group": "Arroz",
+        "n": 22,
+        "n_promo": 17,
+        "promo_rate_pct": 77.3
+      },
+      "Fideos Cortos": {
+        "category_group": "Fideos, Pastas y Salsas",
+        "n": 46,
+        "n_promo": 30,
+        "promo_rate_pct": 65.2
+      },
+      "Fideos Largos": {
+        "category_group": "Fideos, Pastas y Salsas",
+        "n": 38,
+        "n_promo": 24,
+        "promo_rate_pct": 63.2
+      },
+      "Papas": {
+        "category_group": "Snacks y Piqueos",
+        "n": 44,
+        "n_promo": 22,
+        "promo_rate_pct": 50.0
+      },
+      "Galletas Dulces": {
+        "category_group": "Galletas y Golosinas",
+        "n": 106,
+        "n_promo": 51,
+        "promo_rate_pct": 48.1
+      },
+      "Mayonesa": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 30,
+        "n_promo": 13,
+        "promo_rate_pct": 43.3
+      },
+      "Ají y Rocoto": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 28,
+        "n_promo": 12,
+        "promo_rate_pct": 42.9
+      },
+      "Pescados en Conserva": {
+        "category_group": "Conservas",
+        "n": 55,
+        "n_promo": 22,
+        "promo_rate_pct": 40.0
+      },
+      "Ketchup": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 15,
+        "n_promo": 6,
+        "promo_rate_pct": 40.0
+      },
+      "Galletas Saladas": {
+        "category_group": "Galletas y Golosinas",
+        "n": 37,
+        "n_promo": 14,
+        "promo_rate_pct": 37.8
+      },
+      "Salsas de Tomate": {
+        "category_group": "Fideos, Pastas y Salsas",
+        "n": 24,
+        "n_promo": 9,
+        "promo_rate_pct": 37.5
+      },
+      "Chocolates y Lentejas": {
+        "category_group": "Chocolatería",
+        "n": 64,
+        "n_promo": 23,
+        "promo_rate_pct": 35.9
+      },
+      "Maíz": {
+        "category_group": "Snacks y Piqueos",
+        "n": 38,
+        "n_promo": 13,
+        "promo_rate_pct": 34.2
+      },
+      "Sémola y Fideos Especiales": {
+        "category_group": "Fideos, Pastas y Salsas",
+        "n": 28,
+        "n_promo": 9,
+        "promo_rate_pct": 32.1
+      },
+      "Bombones": {
+        "category_group": "Chocolatería",
+        "n": 19,
+        "n_promo": 6,
+        "promo_rate_pct": 31.6
+      },
+      "Otras Golosinas": {
+        "category_group": "Galletas y Golosinas",
+        "n": 29,
+        "n_promo": 9,
+        "promo_rate_pct": 31.0
+      },
+      "Mostaza": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 21,
+        "n_promo": 6,
+        "promo_rate_pct": 28.6
+      },
+      "Otros Endulzantes": {
+        "category_group": "Azúcar y Endulzantes",
+        "n": 25,
+        "n_promo": 7,
+        "promo_rate_pct": 28.0
+      },
+      "Camotes, Chifles y Yucas": {
+        "category_group": "Snacks y Piqueos",
+        "n": 34,
+        "n_promo": 8,
+        "promo_rate_pct": 23.5
+      },
+      "Aceite de Oliva": {
+        "category_group": "Aceite",
+        "n": 30,
+        "n_promo": 7,
+        "promo_rate_pct": 23.3
+      },
+      "Piqueos Mixtos": {
+        "category_group": "Snacks y Piqueos",
+        "n": 29,
+        "n_promo": 6,
+        "promo_rate_pct": 20.7
+      },
+      "Aderezos, Sazonadores y Otros": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 20,
+        "n_promo": 4,
+        "promo_rate_pct": 20.0
+      },
+      "Gomitas y Gomas de Mascar": {
+        "category_group": "Galletas y Golosinas",
+        "n": 34,
+        "n_promo": 6,
+        "promo_rate_pct": 17.6
+      },
+      "Vinagre": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 24,
+        "n_promo": 4,
+        "promo_rate_pct": 16.7
+      },
+      "Sal y Pimienta": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 40,
+        "n_promo": 6,
+        "promo_rate_pct": 15.0
+      },
+      "Maní, Habas, Pistachos y Semillas": {
+        "category_group": "Snacks y Piqueos",
+        "n": 21,
+        "n_promo": 3,
+        "promo_rate_pct": 14.3
+      },
+      "Sillao": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 29,
+        "n_promo": 4,
+        "promo_rate_pct": 13.8
+      },
+      "Salsas especiales": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 37,
+        "n_promo": 5,
+        "promo_rate_pct": 13.5
+      },
+      "Otros Condimentos": {
+        "category_group": "Salsas, Cremas y Condimentos",
+        "n": 31,
+        "n_promo": 4,
+        "promo_rate_pct": 12.9
+      },
+      "Verduras en Conserva": {
+        "category_group": "Conservas",
+        "n": 16,
+        "n_promo": 2,
+        "promo_rate_pct": 12.5
+      },
+      "Caramelos y Chupetes": {
+        "category_group": "Galletas y Golosinas",
+        "n": 48,
+        "n_promo": 6,
+        "promo_rate_pct": 12.5
+      },
+      "Sopas": {
+        "category_group": "Comidas Instantáneas",
+        "n": 27,
+        "n_promo": 3,
+        "promo_rate_pct": 11.1
+      },
+      "Frutos Secos": {
+        "category_group": "Snacks y Piqueos",
+        "n": 51,
+        "n_promo": 5,
+        "promo_rate_pct": 9.8
+      },
+      "Tabletas de Chocolate": {
+        "category_group": "Chocolatería",
+        "n": 19,
+        "n_promo": 1,
+        "promo_rate_pct": 5.3
+      },
+      "Aceitunas en Conserva": {
+        "category_group": "Conservas",
+        "n": 24,
+        "n_promo": 0,
+        "promo_rate_pct": 0.0
+      }
+    },
+    "figura_n_omitidas": 15
+  },
+  "relaciones": {
+    "spearman_precio_vs_descuento_pct_promocionados": 0.02,
+    "spearman_precio_vs_has_discount_total": -0.06,
+    "spearman_precio_regular_vs_has_discount_total": 0.05,
+    "spearman_precio_regular_vs_descuento_soles_promocionados": 0.81,
+    "precio_con_vs_sin_rebaja": {
+      "Sin rebaja": {
+        "n": 958,
+        "precio_regular_mediano": 7.9,
+        "precio_regular_q1": 5.0,
+        "precio_regular_q3": 14.28,
+        "precio_actual_mediano": 7.9
+      },
+      "Con rebaja": {
+        "n": 479,
+        "precio_regular_mediano": 9.0,
+        "precio_regular_q1": 5.4,
+        "precio_regular_q3": 15.0,
+        "precio_actual_mediano": 7.9
+      }
+    },
+    "descuento_mediano_por_cuartil_precio": {
+      "Q1 (más baratos)": {
+        "n": 120,
+        "mediana_pct": 14.5
+      },
+      "Q2": {
+        "n": 134,
+        "mediana_pct": 12.79
+      },
+      "Q3": {
+        "n": 107,
+        "mediana_pct": 16.04
+      },
+      "Q4 (más caros)": {
+        "n": 118,
+        "mediana_pct": 15.34
+      }
+    },
+    "n_sobre_diagonal": 958,
+    "n_bajo_diagonal": 479,
+    "n_actual_mayor_regular": 0,
+    "packs": {
+      "segmentos": {
+        "Packs Abarrotes (categoría)": {
+          "n": 60,
+          "n_promo": 60,
+          "promo_rate_pct": 100.0,
+          "ic95_inf": 94.0,
+          "ic95_sup": 100.0,
+          "precio_mediano": 9.7,
+          "descuento_mediano_pct": 19.85
+        },
+        "Pack en otra categoría": {
+          "n": 4,
+          "n_promo": 0,
+          "promo_rate_pct": 0.0,
+          "ic95_inf": 0.0,
+          "ic95_sup": 49.0,
+          "precio_mediano": 12.85,
+          "descuento_mediano_pct": null
+        },
+        "Resto de productos": {
+          "n": 1373,
+          "n_promo": 419,
+          "promo_rate_pct": 30.5,
+          "ic95_inf": 28.1,
+          "ic95_sup": 33.0,
+          "precio_mediano": 7.9,
+          "descuento_mediano_pct": 12.92
+        }
+      },
+      "is_pack_total": {
+        "n": 64,
+        "n_promo": 60
+      },
+      "promo_rate_global_pct": 33.33,
+      "promo_rate_sin_packs_abarrotes_pct": 30.43,
+      "n_sin_packs_abarrotes": 1377,
+      "efecto_en_tasa_global_pp": 2.9,
+      "prueba_packs_abarrotes_vs_resto": {
+        "k1": 60,
+        "n1": 60,
+        "k2": 419,
+        "n2": 1377,
+        "tasa1_pct": 100.0,
+        "tasa2_pct": 30.43,
+        "chi2": 125.23,
+        "p_chi2": 4.54e-29,
+        "p_fisher": 1.74e-30
+      },
+      "nota": "is_pack coincide con category_group = 'Packs Abarrotes' en 60 de 64 casos; los 4 packs de otras categorías no tienen rebaja."
+    }
+  },
+  "anomalias": {
+    "top5_descuento_pct": [
+      {
+        "name": "Sal de Maras Fina ONZA Doypack 500g",
+        "brand": "ONZA",
+        "discount_pct": 38.14
+      },
+      {
+        "name": "Passata de Tomate MUTTI Frasco 400g",
+        "brand": "MUTTI",
+        "discount_pct": 37.74
+      },
+      {
+        "name": "Tortillas de Maíz TAKIS Buckin' Ranch Bolsa 190g",
+        "brand": "TAKIS",
+        "discount_pct": 36.84
+      },
+      {
+        "name": "Bombones de Chocolate BON O BON Supreme Caja 144g",
+        "brand": "BON O BON",
+        "discount_pct": 36.4
+      },
+      {
+        "name": "Endulzante SPLENDA Stevia Doypack 175g",
+        "brand": "SPLENDA",
+        "discount_pct": 35.18
+      }
+    ],
+    "top5_descuento_soles": [
+      {
+        "name": "Endulzante Natural LAKANTO Sweetener Golden Doypack 800g",
+        "brand": "LAKANTO",
+        "discount_amount": 15.8
+      },
+      {
+        "name": "Endulzante SPLENDA en Polvo Caja 200 Sobres",
+        "brand": "SPLENDA",
+        "discount_amount": 15.7
+      },
+      {
+        "name": "Endulzante SPLENDA Stevia Doypack 175g",
+        "brand": "SPLENDA",
+        "discount_amount": 14.6
+      },
+      {
+        "name": "Pistachos WONDERFUL Jalapeño Bolsa 155g",
+        "brand": "WONDERFUL",
+        "discount_amount": 10.0
+      },
+      {
+        "name": "Aceite de Oliva ACAVILLE Extra Virgen Botella 1L",
+        "brand": "ACAVILLE",
+        "discount_amount": 10.0
+      }
+    ],
+    "top5_precio_actual": [
+      {
+        "name": "Endulzante Natural LAKANTO Sweetener Golden Doypack 800g",
+        "brand": "LAKANTO",
+        "current_price": 89.2
+      },
+      {
+        "name": "Aceite de Oliva VALDEPORRES Gran Selección Botella 2L",
+        "brand": "VALDEPORRES",
+        "current_price": 79.9
+      },
+      {
+        "name": "Aceite de Oliva BELL'S Extra Virgen Botella 2L",
+        "brand": "BELL'S",
+        "current_price": 69.9
+      },
+      {
+        "name": "Filete de Atún FLORIDA en Agua Paquete 12un",
+        "brand": "FLORIDA",
+        "current_price": 69.0
+      },
+      {
+        "name": "Chocolate NESTLÉ Sublime Sonrisa Display 20un",
+        "brand": "NESTLÉ",
+        "current_price": 65.0
+      }
+    ],
+    "n_descuentos_menores_3pct": 12,
+    "n_outliers_precio": 74,
+    "outliers_precio_por_grupo": {
+      "Aceite": 27,
+      "Chocolatería": 14,
+      "Salsas, Cremas y Condimentos": 9,
+      "Azúcar y Endulzantes": 8,
+      "Galletas y Golosinas": 5,
+      "Arroz": 4,
+      "Snacks y Piqueos": 4,
+      "Conservas": 2,
+      "Packs Abarrotes": 1
+    },
+    "n_presentation_imputed": 137
+  },
+  "preprocesamiento": {
+    "raw_filas": 1438,
+    "raw_columnas": 12,
+    "raw_sku_unicos": 1438,
+    "nulos_presentation": 138,
+    "pct_nulos_presentation": 9.6,
+    "nulos_image_url": 1359,
+    "pct_nulos_image_url": 94.51,
+    "integracion": {
+      "registros_antes": 1438,
+      "duplicados_sku": 0,
+      "eliminados": 0,
+      "registros_despues": 1438
+    },
+    "precio_actual_min": 0.8,
+    "precio_actual_max": 89.2,
+    "precio_regular_min": 0.8,
+    "precio_regular_max": 105.0,
+    "discount_almacenado_pct_ceros": 100.0,
+    "n_con_rebaja_raw": 479,
+    "discount_calc_max": 38.14,
+    "presentation_recuperados": 138,
+    "presentation_no_especificado": 0,
+    "presentation_validacion_cobertura_pct": 98.23,
+    "presentation_validacion_envase_coincide_pct": 90.99,
+    "presentation_mecanismo": {
+      "promo_rate_por_imputacion": {
+        "0": {
+          "n": 1300,
+          "n_promo": 403,
+          "promo_rate_pct": 31.0
+        },
+        "1": {
+          "n": 138,
+          "n_promo": 76,
+          "promo_rate_pct": 55.1
+        }
+      },
+      "promo_rate_por_imputacion_sin_packs": {
+        "0": {
+          "n": 1277,
+          "n_promo": 380,
+          "promo_rate_pct": 29.8
+        },
+        "1": {
+          "n": 101,
+          "n_promo": 39,
+          "promo_rate_pct": 38.6
+        }
+      },
+      "n_imputados_en_packs": 37,
+      "pct_imputado_en_packs": 61.7,
+      "pct_imputado_global": 9.6,
+      "imputados_por_grupo": {
+        "Packs Abarrotes": 37,
+        "Fideos, Pastas y Salsas": 31,
+        "Snacks y Piqueos": 18,
+        "Salsas, Cremas y Condimentos": 15,
+        "Chocolatería": 11,
+        "Galletas y Golosinas": 11,
+        "Conservas": 7,
+        "Azúcar y Endulzantes": 5,
+        "Arroz": 1,
+        "Verduras": 1,
+        "Comidas Instantáneas": 1
+      }
+    },
+    "iqr": {
+      "current_price": {
+        "Q1": 4.9,
+        "Q3": 13.88,
+        "IQR": 8.98,
+        "lim_inf": -8.56,
+        "lim_sup": 27.34,
+        "lim_sup_exacto": 27.3375,
+        "n_outliers": 74,
+        "n_base": 1438,
+        "pct_outliers": 5.15,
+        "maximo": 89.2
+      },
+      "regular_price": {
+        "Q1": 5.12,
+        "Q3": 14.5,
+        "IQR": 9.38,
+        "lim_inf": -8.94,
+        "lim_sup": 28.57,
+        "lim_sup_exacto": 28.5663,
+        "n_outliers": 74,
+        "n_base": 1438,
+        "pct_outliers": 5.15,
+        "maximo": 105.0
+      },
+      "discount_pct (promocionados)": {
+        "Q1": 10.38,
+        "Q3": 20.08,
+        "IQR": 9.7,
+        "lim_inf": -4.17,
+        "lim_sup": 34.63,
+        "lim_sup_exacto": 34.63,
+        "n_outliers": 6,
+        "n_base": 479,
+        "pct_outliers": 1.25,
+        "maximo": 38.14
+      }
+    },
+    "n_outliers_precio_actual": 74,
+    "n_outliers_descuento": 6,
+    "outliers_precio_por_grupo_clean": {
+      "Aceite": 27,
+      "Chocolatería": 14,
+      "Salsas, Cremas y Condimentos": 9,
+      "Azúcar y Endulzantes": 8,
+      "Galletas y Golosinas": 5,
+      "Snacks y Piqueos": 4,
+      "Arroz": 4,
+      "Conservas": 2,
+      "Packs Abarrotes": 1
+    },
+    "marcas_unicas_raw": 275,
+    "marcas_unicas_normalizadas": 272,
+    "marcas_unificadas": {
+      "CASAVERDE": "CASA VERDE",
+      "LAYS": "LAY'S",
+      "NESTLE": "NESTLÉ"
+    },
+    "marcas_apostrofo_reconstruido": {
+      "CRICKET S": {
+        "nueva": "CRICKETS",
+        "n": 8
+      },
+      "HELLMANN S": {
+        "nueva": "HELLMANN'S",
+        "n": 5
+      },
+      "LIBBY S": {
+        "nueva": "LIBBY'S",
+        "n": 10
+      },
+      "SNYDER S": {
+        "nueva": "SNYDER'S",
+        "n": 1
+      }
+    },
+    "marcas_registros_modificados": {
+      "variantes": 3,
+      "apostrofo": 24
+    },
+    "submarcas_conservadas": [
+      {
+        "marca": "BON BON",
+        "n_marca": 1,
+        "submarca": "BON BON BUM",
+        "n_submarca": 1
+      },
+      {
+        "marca": "COSTA",
+        "n_marca": 41,
+        "submarca": "COSTA NIK",
+        "n_submarca": 1
+      },
+      {
+        "marca": "EL CORTE INGLÉS",
+        "n_marca": 9,
+        "submarca": "EL CORTE INGLÉS SELECTION",
+        "n_submarca": 6
+      },
+      {
+        "marca": "MEXI",
+        "n_marca": 2,
+        "submarca": "MEXI NACHOS",
+        "n_submarca": 1
+      },
+      {
+        "marca": "NABISCO",
+        "n_marca": 2,
+        "submarca": "NABISCO RITZ",
+        "n_submarca": 1
+      },
+      {
+        "marca": "NESTLE",
+        "n_marca": 1,
+        "submarca": "NESTLE MOROCHAS",
+        "n_submarca": 1
+      },
+      {
+        "marca": "NESTLE",
+        "n_marca": 1,
+        "submarca": "NESTLE SUBLIME",
+        "n_submarca": 4
+      },
+      {
+        "marca": "VICTORIA",
+        "n_marca": 13,
+        "submarca": "VICTORIA GLACITAS",
+        "n_submarca": 6
+      },
+      {
+        "marca": "VICTORIA",
+        "n_marca": 13,
+        "submarca": "VICTORIA TENTACION",
+        "n_submarca": 4
+      }
+    ],
+    "discount_pct_promocionados_cuartiles": {
+      "0.25": 10.38,
+      "0.5": 14.71,
+      "0.75": 20.08
+    },
+    "sensibilidad_cortes_intensidad": {
+      "n_exacto_10": 11,
+      "n_exacto_20": 11,
+      "n_entre_19_5_y_20_5": 31,
+      "alternativas": [
+        {
+          "cortes": "10/20, intervalos (a, b] (elegido)",
+          "pct_Bajo": 22.8,
+          "pct_Medio": 52.0,
+          "pct_Alto": 25.3,
+          "nivel_predominante": "Medio",
+          "packs_pct_alto": 43.3
+        },
+        {
+          "cortes": "10/20, intervalos [a, b)",
+          "pct_Bajo": 20.5,
+          "pct_Medio": 52.0,
+          "pct_Alto": 27.6,
+          "nivel_predominante": "Medio",
+          "packs_pct_alto": 50.0
+        },
+        {
+          "cortes": "Cuartiles exactos 10,38/20,08, (a, b]",
+          "pct_Bajo": 25.1,
+          "pct_Medio": 50.1,
+          "pct_Alto": 24.8,
+          "nivel_predominante": "Medio",
+          "packs_pct_alto": 43.3
+        }
+      ]
+    },
+    "n_is_pack": 64,
+    "n_is_pack_fuera_categoria_packs": 4,
+    "n_in_scope": 1437,
+    "n_promocionados_total": 479,
+    "contenido": {
+      "n_sin_contenido": 0,
+      "n_con_multiplicador": 18,
+      "unidades": {
+        "g": 1122,
+        "un": 188,
+        "ml": 128
+      },
+      "validacion_n_base": 1277,
+      "validacion_n_coincide": 1189,
+      "validacion_pct_coincide": 93.11,
+      "n_content_validated": 1327,
+      "unit_price_base": {
+        "g": "S/ por kg",
+        "ml": "S/ por litro",
+        "un": "S/ por unidad"
+      }
+    },
+    "decision_columnas": [
+      {
+        "columna_raw": "sku",
+        "decision": "Se conserva",
+        "justificacion": "Identificador único del producto (clave)"
+      },
+      {
+        "columna_raw": "brand",
+        "decision": "Se conserva (normalizada)",
+        "justificacion": "Segmentación por marca"
+      },
+      {
+        "columna_raw": "name",
+        "decision": "Se conserva",
+        "justificacion": "Descripción; base de la imputación y de is_pack"
+      },
+      {
+        "columna_raw": "category",
+        "decision": "Se reemplaza",
+        "justificacion": "Separada en category_level1 / category_group / subcategory"
+      },
+      {
+        "columna_raw": "seller",
+        "decision": "Se excluye",
+        "justificacion": "Varianza cero: 'plaza vea' en el 100 %"
+      },
+      {
+        "columna_raw": "stock",
+        "decision": "Se excluye",
+        "justificacion": "Varianza cero: True en el 100 %"
+      },
+      {
+        "columna_raw": "presentation",
+        "decision": "Se conserva (imputada)",
+        "justificacion": "Envase y tamaño; flag presentation_imputed; base de content_qty y unit_price"
+      },
+      {
+        "columna_raw": "current_price",
+        "decision": "Se conserva",
+        "justificacion": "Variable analítica central (S/)"
+      },
+      {
+        "columna_raw": "regular_price",
+        "decision": "Se conserva",
+        "justificacion": "Variable analítica central (S/)"
+      },
+      {
+        "columna_raw": "discount",
+        "decision": "Se excluye",
+        "justificacion": "Inválida: 0 en el 100 % pese a 479 rebajas; reemplazada por discount_pct"
+      },
+      {
+        "columna_raw": "product_url",
+        "decision": "Solo dataset limpio",
+        "justificacion": "Trazabilidad; sin valor analítico (sku ya identifica)"
+      },
+      {
+        "columna_raw": "image_url",
+        "decision": "Solo dataset limpio",
+        "justificacion": "94,5 % nulos por lazy-loading; sin valor analítico"
+      }
+    ],
+    "antes_despues": [
+      {
+        "dataset": "raw",
+        "filas": 1438,
+        "columnas": 12
+      },
+      {
+        "dataset": "clean (completo)",
+        "filas": 1438,
+        "columnas": 29
+      },
+      {
+        "dataset": "final (analítico)",
+        "filas": 1437,
+        "columnas": 21
+      }
+    ],
+    "n_envase_distinto_name_vs_presentation": 115,
+    "registro_calidad": [
+      {
+        "Problema": "Descuento almacenado inválido",
+        "Detección": "Regla de coherencia: discount = 0 en 100 % y 479 productos con current_price < regular_price",
+        "Decisión": "Descartar discount y reconstruirlo",
+        "Técnica": "discount_pct = (regular − current)/regular × 100; has_discount con tolerancia S/ 0,005",
+        "Resultado": "479 promocionados; discount_pct de 0 a 38,14 %",
+        "Justificación": "El selector '-X%' no capturó el texto y fillna(0) lo ocultó; los precios sí son confiables"
+      },
+      {
+        "Problema": "Nulos en presentation",
+        "Detección": "isna(): 138 nulos (9,60 %); tasa de rebaja 55,1 % en nulos vs 31,0 % en no nulos",
+        "Decisión": "Imputar desde name, no eliminar filas",
+        "Técnica": "Regex envase + cantidad/unidad al final del nombre + flag presentation_imputed",
+        "Resultado": "138 recuperados; 0 'No especificado'",
+        "Justificación": "Faltante no aleatorio (asociado a rebaja y a Packs; sin Packs 38,6 % vs 29,8 %): eliminar sesgaría la tasa promocional; la información está en el nombre"
+      },
+      {
+        "Problema": "Envase de presentation distinto al del nombre",
+        "Detección": "Comparación de la primera palabra de presentation con el envase extraído de name (no nulos)",
+        "Decisión": "Respetar el valor publicado",
+        "Técnica": "Sin transformación; se documenta",
+        "Resultado": "115 registros con envase distinto (p. ej. 'Bolsa 6un' vs 'Paquete 6un')",
+        "Justificación": "Inconsistencia del retailer entre tarjeta y nombre; no hay criterio para preferir uno"
+      },
+      {
+        "Problema": "Nulos masivos en image_url",
+        "Detección": "isna(): 1359 nulos (94,51 %)",
+        "Decisión": "No imputar; excluir del dataset analítico",
+        "Técnica": "Reducción de columnas",
+        "Resultado": "Conservada solo en dataset limpio",
+        "Justificación": "Lazy-loading de imágenes (hipótesis); variable de trazabilidad sin valor analítico"
+      },
+      {
+        "Problema": "Variantes de marca",
+        "Detección": "Clave alfanumérica en minúsculas y sin acentos (groupby)",
+        "Decisión": "Unificar a la escritura más frecuente",
+        "Técnica": "strip + upper + mapeo de variantes; brand_original como respaldo",
+        "Resultado": "Marcas: 275 → 272 (CASAVERDE, LAYS, NESTLE; 3 registros)",
+        "Justificación": "Evitar fragmentar los conteos y tasas por marca"
+      },
+      {
+        "Problema": "Apóstrofo perdido en marcas",
+        "Detección": "Marcas que terminan en ' S' (regex) y búsqueda de \"X'S\" / \"XS\" en name",
+        "Decisión": "Reconstruir la escritura desde name",
+        "Técnica": "Mapeo CRICKET S → CRICKETS, HELLMANN S → HELLMANN'S, LIBBY S → LIBBY'S, SNYDER S → SNYDER'S",
+        "Resultado": "24 registros corregidos; el número de marcas no cambia",
+        "Justificación": "Error de captura (apóstrofo convertido en espacio); el nombre del producto es la referencia verificable"
+      },
+      {
+        "Problema": "Submarcas",
+        "Detección": "Marcas que empiezan con otra marca + espacio (p. ej. VICTORIA / VICTORIA GLACITAS)",
+        "Decisión": "Conservar como marcas distintas",
+        "Técnica": "Sin transformación; se documenta",
+        "Resultado": "9 pares detectados; VICTORIA queda con n = 13 en el ranking",
+        "Justificación": "Así las publica el retailer; no hay regla objetiva de agregación y el prefijo da falsos positivos"
+      },
+      {
+        "Problema": "Dobles espacios internos en textos",
+        "Detección": "str.contains(r'\\s{2,}'): 5 en name y 8 en presentation",
+        "Decisión": "Colapsar a un espacio",
+        "Técnica": "str.strip() + str.replace(r'\\s+', ' ')",
+        "Resultado": "0 dobles espacios tras la limpieza",
+        "Justificación": "Evita falsas diferencias al agrupar o comparar textos"
+      },
+      {
+        "Problema": "Variables de varianza cero (seller, stock)",
+        "Detección": "nunique() = 1 en ambas",
+        "Decisión": "Excluir del dataset analítico",
+        "Técnica": "Reducción de columnas",
+        "Resultado": "Conservadas solo en dataset limpio",
+        "Justificación": "No segmentan; el listado muestra solo productos disponibles de la tienda"
+      },
+      {
+        "Problema": "Categoría jerárquica en un solo texto",
+        "Detección": "split(' / '): 71 valores, 2 o 3 niveles",
+        "Decisión": "Separar niveles",
+        "Técnica": "category_level1, category_group, subcategory (nivel 3 o repetición del nivel 2)",
+        "Resultado": "13 grupos, 71 subcategorías (dataset limpio); 12 y 70 en el analítico",
+        "Justificación": "Permite agregar a distintos niveles de detalle"
+      },
+      {
+        "Problema": "Registro fuera de alcance",
+        "Detección": "Nivel 1 = 'Frutas y Verduras' (1 registro)",
+        "Decisión": "Excluir del dataset analítico",
+        "Técnica": "Flag in_scope",
+        "Resultado": "Dataset final: 1437 registros",
+        "Justificación": "El proyecto se delimita a Abarrotes"
+      },
+      {
+        "Problema": "Outliers de precio actual",
+        "Detección": "IQR sobre current_price: límite superior S/ 27,34 (calculado sin redondear)",
+        "Decisión": "Conservar y marcar",
+        "Técnica": "Flag is_price_outlier (solo sobre current_price)",
+        "Resultado": "74 productos marcados",
+        "Justificación": "Precios altos válidos (aceite de oliva, endulzantes, packs, displays); regular_price tiene los mismos 74 outliers y un segundo flag sería redundante"
+      },
+      {
+        "Problema": "Outliers de descuento",
+        "Detección": "IQR sobre discount_pct entre promocionados: límite superior 34,63 %",
+        "Decisión": "Conservar sin flag",
+        "Técnica": "Listado de revisión (sección 5)",
+        "Resultado": "6 de 479 promocionados (1,25 %); máximo 38,14 %",
+        "Justificación": "Coherentes con sus precios; no son errores de captura"
+      },
+      {
+        "Problema": "Contenido no estructurado en presentation",
+        "Detección": "Regex cantidad + unidad (+ multiplicador) sobre presentation",
+        "Decisión": "Crear content_qty, content_unit, has_multiplier y unit_price",
+        "Técnica": "Conversión a g/ml/un y precio por kg, litro o unidad",
+        "Resultado": "1438 de 1438 con contenido; coincide con el nombre en 93,1 % de los no imputados",
+        "Justificación": "Permite comparar precios dentro de una subcategoría sin el efecto del tamaño"
+      },
+      {
+        "Problema": "Duplicados por SKU",
+        "Detección": "duplicated(subset='sku')",
+        "Decisión": "Eliminar si existieran",
+        "Técnica": "drop_duplicates(subset='sku')",
+        "Resultado": "1438 / 0 / 0 / 1438",
+        "Justificación": "Clave de la integración de 30 páginas"
+      },
+      {
+        "Problema": "Tipo de sku",
+        "Detección": "Longitudes 2–8 caracteres",
+        "Decisión": "Mantener como texto",
+        "Técnica": "dtype str al leer el CSV",
+        "Resultado": "sku sin pérdida de formato",
+        "Justificación": "Es identificador, no magnitud"
+      }
+    ],
+    "clean_filas": 1438,
+    "clean_columnas": 29,
+    "final_filas": 1437,
+    "final_columnas": 21,
+    "final_columnas_lista": [
+      "sku",
+      "name",
+      "brand",
+      "category_level1",
+      "category_group",
+      "subcategory",
+      "presentation",
+      "presentation_imputed",
+      "content_qty",
+      "content_unit",
+      "has_multiplier",
+      "content_validated",
+      "current_price",
+      "regular_price",
+      "unit_price",
+      "has_discount",
+      "discount_amount",
+      "discount_pct",
+      "promotion_intensity",
+      "is_price_outlier",
+      "is_pack"
+    ],
+    "clean_columnas_lista": [
+      "sku",
+      "brand",
+      "brand_original",
+      "name",
+      "category",
+      "category_level1",
+      "category_group",
+      "subcategory",
+      "seller",
+      "stock",
+      "presentation",
+      "presentation_imputed",
+      "content_qty",
+      "content_unit",
+      "has_multiplier",
+      "content_validated",
+      "current_price",
+      "regular_price",
+      "unit_price",
+      "discount_original",
+      "has_discount",
+      "discount_amount",
+      "discount_pct",
+      "promotion_intensity",
+      "is_price_outlier",
+      "is_pack",
+      "in_scope",
+      "product_url",
+      "image_url"
+    ],
+    "conteos_clean_vs_final": {
+      "clean": {
+        "registros": 1438,
+        "marcas": 272,
+        "category_group": 13,
+        "subcategory": 71,
+        "sin_descuento": 959,
+        "promocionados": 479
+      },
+      "final": {
+        "registros": 1437,
+        "marcas": 271,
+        "category_group": 12,
+        "subcategory": 70,
+        "sin_descuento": 958,
+        "promocionados": 479
+      },
+      "nota": "Las cifras analíticas oficiales son las del dataset final (1437). La diferencia se debe al único registro fuera de alcance (SAN SEN, Frutas y Verduras / Verduras Orientales, sin rebaja)."
+    },
+    "tablas_calidad": {
+      "perfil_raw": [
+        {
+          "variable": "sku",
+          "dtype": "str",
+          "n_unicos": 1438,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "brand",
+          "dtype": "str",
+          "n_unicos": 275,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "name",
+          "dtype": "str",
+          "n_unicos": 1438,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "category",
+          "dtype": "str",
+          "n_unicos": 71,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "seller",
+          "dtype": "str",
+          "n_unicos": 1,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "stock",
+          "dtype": "bool",
+          "n_unicos": 1,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "presentation",
+          "dtype": "str",
+          "n_unicos": 464,
+          "n_nulos": 138,
+          "pct_nulos": 9.6
+        },
+        {
+          "variable": "current_price",
+          "dtype": "float64",
+          "n_unicos": 275,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "regular_price",
+          "dtype": "float64",
+          "n_unicos": 285,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "discount",
+          "dtype": "float64",
+          "n_unicos": 1,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "product_url",
+          "dtype": "str",
+          "n_unicos": 1438,
+          "n_nulos": 0,
+          "pct_nulos": 0.0
+        },
+        {
+          "variable": "image_url",
+          "dtype": "str",
+          "n_unicos": 79,
+          "n_nulos": 1359,
+          "pct_nulos": 94.51
+        }
+      ],
+      "reglas_dominio": [
+        {
+          "regla": "current_price > 0",
+          "n_incumple": 0,
+          "pct_incumple": 0.0
+        },
+        {
+          "regla": "regular_price > 0",
+          "n_incumple": 0,
+          "pct_incumple": 0.0
+        },
+        {
+          "regla": "current_price <= regular_price",
+          "n_incumple": 0,
+          "pct_incumple": 0.0
+        },
+        {
+          "regla": "0 <= discount <= 100 (almacenado)",
+          "n_incumple": 0,
+          "pct_incumple": 0.0
+        },
+        {
+          "regla": "discount almacenado = 0 pero current_price < regular_price",
+          "n_incumple": 479,
+          "pct_incumple": 33.31
+        },
+        {
+          "regla": "discount almacenado coherente con el calculable (|dif| <= 1 p.p.)",
+          "n_incumple": 478,
+          "pct_incumple": 33.24
+        }
+      ],
+      "control_integracion": [
+        {
+          "registros_antes": 1438,
+          "duplicados_sku": 0,
+          "eliminados": 0,
+          "registros_despues": 1438
+        }
+      ],
+      "faltantes": [
+        {
+          "variable": "presentation",
+          "n_nulos": 138,
+          "pct_nulos": 9.6,
+          "relevancia": "Media: describe el envase/tamaño",
+          "mecanismo_plausible": "No aleatorio (ver 4.1): el faltante se asocia a productos con rebaja y a Packs; la información sí está en el nombre",
+          "tratamiento": "Imputación por regex desde name + flag presentation_imputed"
+        },
+        {
+          "variable": "image_url",
+          "n_nulos": 1359,
+          "pct_nulos": 94.51,
+          "relevancia": "Baja: solo trazabilidad visual",
+          "mecanismo_plausible": "Técnico: lazy-loading de imágenes; Selenium no hizo scroll hasta cada tarjeta (hipótesis)",
+          "tratamiento": "Sin imputación; se excluye del dataset analítico"
+        }
+      ],
+      "espacios_texto": [
+        {
+          "variable": "sku",
+          "espacios_extremos": 0,
+          "dobles_espacios": 0
+        },
+        {
+          "variable": "brand",
+          "espacios_extremos": 0,
+          "dobles_espacios": 0
+        },
+        {
+          "variable": "name",
+          "espacios_extremos": 0,
+          "dobles_espacios": 5
+        },
+        {
+          "variable": "category",
+          "espacios_extremos": 0,
+          "dobles_espacios": 0
+        },
+        {
+          "variable": "seller",
+          "espacios_extremos": 0,
+          "dobles_espacios": 0
+        },
+        {
+          "variable": "presentation",
+          "espacios_extremos": 0,
+          "dobles_espacios": 8
+        },
+        {
+          "variable": "product_url",
+          "espacios_extremos": 0,
+          "dobles_espacios": 0
+        }
+      ],
+      "apostrofo_marcas": [
+        {
+          "marca_publicada": "CRICKET S",
+          "n": 8,
+          "escritura_en_name": "CRICKETS",
+          "ejemplo_name": "Chifles CRICKETS Sabor a Leche de Tigre Bolsa 250g"
+        },
+        {
+          "marca_publicada": "HELLMANN S",
+          "n": 5,
+          "escritura_en_name": "HELLMANN'S",
+          "ejemplo_name": "Mayonesa Clásica HELLMANN'S Doypack 475g"
+        },
+        {
+          "marca_publicada": "LIBBY S",
+          "n": 10,
+          "escritura_en_name": "LIBBY'S",
+          "ejemplo_name": "Mayonesa LIBBY'S Doypack 100g"
+        },
+        {
+          "marca_publicada": "SNYDER S",
+          "n": 1,
+          "escritura_en_name": "SNYDER'S",
+          "ejemplo_name": "Piqueo SNYDER'S PRETZELS Snaps bajo en grasa Bolsa 255Gr"
+        }
+      ],
+      "variantes_marca": {
+        "CASAVERDE": "CASA VERDE",
+        "LAYS": "LAY'S",
+        "NESTLE": "NESTLÉ"
+      },
+      "imputados_por_grupo": [
+        {
+          "category_group": "Packs Abarrotes",
+          "n_no_imputado": 23,
+          "n_imputado": 37,
+          "n": 60,
+          "pct_imputado": 61.7
+        },
+        {
+          "category_group": "Fideos, Pastas y Salsas",
+          "n_no_imputado": 109,
+          "n_imputado": 31,
+          "n": 140,
+          "pct_imputado": 22.1
+        },
+        {
+          "category_group": "Snacks y Piqueos",
+          "n_no_imputado": 210,
+          "n_imputado": 18,
+          "n": 228,
+          "pct_imputado": 7.9
+        },
+        {
+          "category_group": "Salsas, Cremas y Condimentos",
+          "n_no_imputado": 290,
+          "n_imputado": 15,
+          "n": 305,
+          "pct_imputado": 4.9
+        },
+        {
+          "category_group": "Chocolatería",
+          "n_no_imputado": 104,
+          "n_imputado": 11,
+          "n": 115,
+          "pct_imputado": 9.6
+        },
+        {
+          "category_group": "Galletas y Golosinas",
+          "n_no_imputado": 243,
+          "n_imputado": 11,
+          "n": 254,
+          "pct_imputado": 4.3
+        },
+        {
+          "category_group": "Conservas",
+          "n_no_imputado": 113,
+          "n_imputado": 7,
+          "n": 120,
+          "pct_imputado": 5.8
+        },
+        {
+          "category_group": "Azúcar y Endulzantes",
+          "n_no_imputado": 37,
+          "n_imputado": 5,
+          "n": 42,
+          "pct_imputado": 11.9
+        },
+        {
+          "category_group": "Arroz",
+          "n_no_imputado": 33,
+          "n_imputado": 1,
+          "n": 34,
+          "pct_imputado": 2.9
+        },
+        {
+          "category_group": "Verduras",
+          "n_no_imputado": 0,
+          "n_imputado": 1,
+          "n": 1,
+          "pct_imputado": 100.0
+        },
+        {
+          "category_group": "Comidas Instantáneas",
+          "n_no_imputado": 37,
+          "n_imputado": 1,
+          "n": 38,
+          "pct_imputado": 2.6
+        },
+        {
+          "category_group": "Aceite",
+          "n_no_imputado": 58,
+          "n_imputado": 0,
+          "n": 58,
+          "pct_imputado": 0.0
+        },
+        {
+          "category_group": "Menestras",
+          "n_no_imputado": 43,
+          "n_imputado": 0,
+          "n": 43,
+          "pct_imputado": 0.0
+        }
+      ]
+    },
+    "figuras_02": {
+      "fig01_valores_faltantes.png": {
+        "titulo": "Porcentaje de valores faltantes por variable (dataset raw)",
+        "notebook": "02_preprocessing.ipynb",
+        "pregunta": "Preprocesamiento: ¿qué variables tienen faltantes y en qué proporción?",
+        "hallazgo_cifra": "image_url 94,5 % y presentation 9,6 % de nulos; las demás variables, 0 %",
+        "n": 1438
+      },
+      "figA1_outliers_precio_actual.png": {
+        "titulo": "Outliers del precio actual según el criterio IQR (n = 1438)",
+        "notebook": "02_preprocessing.ipynb",
+        "pregunta": "Preprocesamiento: ¿existen precios actuales atípicos?",
+        "hallazgo_cifra": "Límite superior S/ 27,34; 74 outliers (5,15 %) conservados y marcados",
+        "n": 1438
+      },
+      "figA2_outliers_precio_regular.png": {
+        "titulo": "Outliers del precio regular según el criterio IQR (n = 1438)",
+        "notebook": "02_preprocessing.ipynb",
+        "pregunta": "Preprocesamiento: ¿existen precios regulares atípicos?",
+        "hallazgo_cifra": "Límite superior S/ 28,57; 74 outliers; máximo S/ 105,00",
+        "n": 1438
+      },
+      "figA3_outliers_descuento_pct.png": {
+        "titulo": "Outliers del descuento entre productos con rebaja según el criterio IQR (n = 479)",
+        "notebook": "02_preprocessing.ipynb",
+        "pregunta": "Preprocesamiento: ¿existen descuentos atípicos?",
+        "hallazgo_cifra": "Límite superior 34,63 %; 6 de 479 outliers (1,25 %); máximo 38,14 %",
+        "n": 479
+      }
+    }
+  },
+  "figures": {
+    "fig01_valores_faltantes.png": {
+      "numero": 2,
+      "etiqueta": "Figura 2",
+      "titulo": "Porcentaje de valores faltantes por variable (dataset raw)",
+      "titulo_completo": "Figura 2. Porcentaje de valores faltantes por variable (dataset raw)",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig01_valores_faltantes.png",
+      "notebook": "02_preprocessing.ipynb",
+      "seccion": "Preprocesamiento",
+      "pregunta": "Preprocesamiento: ¿qué variables tienen faltantes y en qué proporción?",
+      "hallazgo_cifra": "image_url 94,5 % y presentation 9,6 % de nulos; las demás variables, 0 %",
+      "n": 1438
+    },
+    "fig02_distribucion_precio_actual.png": {
+      "numero": 3,
+      "etiqueta": "Figura 3",
+      "titulo": "Distribución del precio actual",
+      "titulo_completo": "Figura 3. Distribución del precio actual",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig02_distribucion_precio_actual.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "A",
+      "pregunta": "A. ¿Cómo se distribuyen los precios actuales?",
+      "hallazgo_cifra": "Mediana S/ 7,90 < media S/ 10,71; asimetría 2,79; 64,2 % de productos cuesta hasta S/ 10; 74 sobre el límite IQR S/ 27,34",
+      "n": 1437
+    },
+    "fig03_precio_por_category_group.png": {
+      "numero": 4,
+      "etiqueta": "Figura 4",
+      "titulo": "Precio actual por grupo de categoría",
+      "titulo_completo": "Figura 4. Precio actual por grupo de categoría",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig03_precio_por_category_group.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "A",
+      "pregunta": "A. ¿Varía el nivel de precios entre grupos de categoría?",
+      "hallazgo_cifra": "Mediana desde S/ 3,95 (Fideos, Pastas y Salsas) hasta S/ 25,45 (Aceite)",
+      "n": 1437
+    },
+    "fig04_precio_unitario_subcategoria.png": {
+      "numero": 5,
+      "etiqueta": "Figura 5",
+      "titulo": "Precio por kg o por litro dentro de subcategorías (n ≥ 15)",
+      "titulo_completo": "Figura 5. Precio por kg o por litro dentro de subcategorías (n ≥ 15)",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig04_precio_unitario_subcategoria.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "A",
+      "pregunta": "A. ¿Cuánto varía el precio publicado dentro de una misma subcategoría una vez normalizado por contenido?",
+      "hallazgo_cifra": "32 subcategorías; el cociente Q3/Q1 del precio por kg o litro va de 1,20 (Arroz Extra) a 9,35 (Sal y Pimienta); mediana 1,90",
+      "n": 897
+    },
+    "fig05_promo_rate_category_group.png": {
+      "numero": 6,
+      "etiqueta": "Figura 6",
+      "titulo": "Tasa promocional por grupo de categoría (IC 95 %)",
+      "titulo_completo": "Figura 6. Tasa promocional por grupo de categoría (IC 95 %)",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig05_promo_rate_category_group.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "B",
+      "pregunta": "B. ¿Cómo cambia la frecuencia de rebajas por grupo de categoría?",
+      "hallazgo_cifra": "De 10,5 % (Comidas Instantáneas) a 100,0 % (Packs Abarrotes); global 33,3 %",
+      "n": 1437
+    },
+    "fig06_promo_rate_marcas.png": {
+      "numero": 7,
+      "etiqueta": "Figura 7",
+      "titulo": "Tasa promocional por marca (n ≥ 10): observada, IC 95 % y esperada por mezcla de grupos",
+      "titulo_completo": "Figura 7. Tasa promocional por marca (n ≥ 10): observada, IC 95 % y esperada por mezcla de grupos",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig06_promo_rate_marcas.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "B",
+      "pregunta": "B. ¿Qué marcas muestran rebaja con mayor frecuencia?",
+      "hallazgo_cifra": "5 marcas con tasa ≥ 90 % y 3 marcas con 0 %; BELL'S 10,3 % (n = 184)",
+      "n": 697
+    },
+    "fig07_distribucion_descuento.png": {
+      "numero": 8,
+      "etiqueta": "Figura 8",
+      "titulo": "Distribución del descuento entre productos con rebaja",
+      "titulo_completo": "Figura 8. Distribución del descuento entre productos con rebaja",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig07_distribucion_descuento.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "C",
+      "pregunta": "C. ¿Qué tan profundos son los descuentos?",
+      "hallazgo_cifra": "Mediana 14,71 %, IQR 10,38–20,08 %, máximo 38,14 %; 21 productos (4,4 %) sobre 30 %",
+      "n": 479
+    },
+    "fig10_intensidad_por_category_group.png": {
+      "numero": 9,
+      "etiqueta": "Figura 9",
+      "titulo": "Intensidad promocional por grupo de categoría",
+      "titulo_completo": "Figura 9. Intensidad promocional por grupo de categoría",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig10_intensidad_por_category_group.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "E",
+      "pregunta": "E. ¿Qué grupos combinan mayor frecuencia y profundidad de descuento?",
+      "hallazgo_cifra": "Packs Abarrotes: 43,3 % en nivel Alto; entre los demás grupos, Chocolatería lidera con 16,5 %",
+      "n": 1437
+    },
+    "fig11_promo_rate_subcategorias.png": {
+      "numero": 10,
+      "etiqueta": "Figura 10",
+      "titulo": "Subcategorías con mayor y menor tasa promocional (n ≥ 15)",
+      "titulo_completo": "Figura 10. Subcategorías con mayor y menor tasa promocional (n ≥ 15)",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig11_promo_rate_subcategorias.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "E",
+      "pregunta": "E. ¿Qué subcategorías tienen más y menos rebajas?",
+      "hallazgo_cifra": "Máx: Arroz Extra 77,3 % (n = 22); mín: Aceitunas en Conserva 0,0 % (n = 24); 15 subcategorías intermedias omitidas; Packs Abarrotes excluido (sin nivel 3)",
+      "n": 724
+    },
+    "fig13_precio_vs_descuento.png": {
+      "numero": 11,
+      "etiqueta": "Figura 11",
+      "titulo": "Precio actual vs. descuento (%) entre promocionados",
+      "titulo_completo": "Figura 11. Precio actual vs. descuento (%) entre promocionados",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig13_precio_vs_descuento.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "F",
+      "pregunta": "F. ¿Los productos más caros tienen descuentos porcentuales mayores?",
+      "hallazgo_cifra": "Spearman ρ = 0,02: sin asociación monótona entre precio y % de descuento",
+      "n": 479
+    },
+    "fig14_packs_abarrotes_vs_resto.png": {
+      "numero": 12,
+      "etiqueta": "Figura 12",
+      "titulo": "Packs Abarrotes frente a packs de otras categorías y al resto de productos",
+      "titulo_completo": "Figura 12. Packs Abarrotes frente a packs de otras categorías y al resto de productos",
+      "ubicacion": "cuerpo",
+      "archivo": "reports/figures/fig14_packs_abarrotes_vs_resto.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "F",
+      "pregunta": "F. ¿La frecuencia de rebajas de los packs se asocia a la categoría o al formato?",
+      "hallazgo_cifra": "Packs Abarrotes 100,0 % (60/60); packs en otras categorías 0/4; resto 30,5 %; descuento mediano 19,85 % vs 12,92 %",
+      "n": 1437
+    },
+    "figA1_outliers_precio_actual.png": {
+      "numero": "A1",
+      "etiqueta": "Figura A1",
+      "titulo": "Outliers del precio actual según el criterio IQR (n = 1438)",
+      "titulo_completo": "Figura A1. Outliers del precio actual según el criterio IQR (n = 1438)",
+      "ubicacion": "anexo A",
+      "archivo": "reports/figures/figA1_outliers_precio_actual.png",
+      "notebook": "02_preprocessing.ipynb",
+      "seccion": "Preprocesamiento",
+      "pregunta": "Preprocesamiento: ¿existen precios actuales atípicos?",
+      "hallazgo_cifra": "Límite superior S/ 27,34; 74 outliers (5,15 %) conservados y marcados",
+      "n": 1438
+    },
+    "figA2_outliers_precio_regular.png": {
+      "numero": "A2",
+      "etiqueta": "Figura A2",
+      "titulo": "Outliers del precio regular según el criterio IQR (n = 1438)",
+      "titulo_completo": "Figura A2. Outliers del precio regular según el criterio IQR (n = 1438)",
+      "ubicacion": "anexo A",
+      "archivo": "reports/figures/figA2_outliers_precio_regular.png",
+      "notebook": "02_preprocessing.ipynb",
+      "seccion": "Preprocesamiento",
+      "pregunta": "Preprocesamiento: ¿existen precios regulares atípicos?",
+      "hallazgo_cifra": "Límite superior S/ 28,57; 74 outliers; máximo S/ 105,00",
+      "n": 1438
+    },
+    "figA3_outliers_descuento_pct.png": {
+      "numero": "A3",
+      "etiqueta": "Figura A3",
+      "titulo": "Outliers del descuento entre productos con rebaja según el criterio IQR (n = 479)",
+      "titulo_completo": "Figura A3. Outliers del descuento entre productos con rebaja según el criterio IQR (n = 479)",
+      "ubicacion": "anexo A",
+      "archivo": "reports/figures/figA3_outliers_descuento_pct.png",
+      "notebook": "02_preprocessing.ipynb",
+      "seccion": "Preprocesamiento",
+      "pregunta": "Preprocesamiento: ¿existen descuentos atípicos?",
+      "hallazgo_cifra": "Límite superior 34,63 %; 6 de 479 outliers (1,25 %); máximo 38,14 %",
+      "n": 479
+    },
+    "figA4_top_marcas_productos.png": {
+      "numero": "A4",
+      "etiqueta": "Figura A4",
+      "titulo": "Las 15 marcas con más productos: composición con y sin rebaja",
+      "titulo_completo": "Figura A4. Las 15 marcas con más productos: composición con y sin rebaja",
+      "ubicacion": "anexo A",
+      "archivo": "reports/figures/figA4_top_marcas_productos.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "D",
+      "pregunta": "D. ¿Qué marcas concentran la oferta extraída y cuántas de sus referencias tienen rebaja?",
+      "hallazgo_cifra": "BELL'S: 184 productos (12,8 % de la muestra) y tasa 10,3 % vs 36,7 % del resto",
+      "n": 497
+    },
+    "figA5_regular_vs_actual.png": {
+      "numero": "A5",
+      "etiqueta": "Figura A5",
+      "titulo": "Precio regular vs. precio actual (validación de consistencia)",
+      "titulo_completo": "Figura A5. Precio regular vs. precio actual (validación de consistencia)",
+      "ubicacion": "anexo A",
+      "archivo": "reports/figures/figA5_regular_vs_actual.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "F",
+      "pregunta": "F. ¿Es consistente la relación entre precio regular y actual?",
+      "hallazgo_cifra": "958 productos sobre y = x, 479 por debajo, 0 por encima",
+      "n": 1437
+    },
+    "fig08_intensidad_promocional.png": {
+      "numero": "A6",
+      "etiqueta": "Figura A6",
+      "titulo": "Distribución de la intensidad promocional",
+      "titulo_completo": "Figura A6. Distribución de la intensidad promocional",
+      "ubicacion": "anexo A",
+      "archivo": "reports/figures/fig08_intensidad_promocional.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "C",
+      "pregunta": "C. ¿Cómo se reparten los productos entre niveles de descuento?",
+      "hallazgo_cifra": "Medio = 52,0 % de los promocionados; Alto = 25,3 %; Bajo = 22,8 %",
+      "n": 1437
+    },
+    "fig09_descuento_por_category_group.png": {
+      "numero": "A7",
+      "etiqueta": "Figura A7",
+      "titulo": "Descuento entre promocionados por grupo de categoría (n promo ≥ 5)",
+      "titulo_completo": "Figura A7. Descuento entre promocionados por grupo de categoría (n promo ≥ 5)",
+      "ubicacion": "anexo A",
+      "archivo": "reports/figures/fig09_descuento_por_category_group.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "E",
+      "pregunta": "E. ¿Qué tan profundos son los descuentos en cada grupo?",
+      "hallazgo_cifra": "Mediana desde 10,17 % (Conservas) hasta 20,14 % (Chocolatería)",
+      "n": 475
+    },
+    "fig12_precio_con_vs_sin_rebaja.png": {
+      "numero": "A8",
+      "etiqueta": "Figura A8",
+      "titulo": "Precio regular y actual de productos con y sin rebaja",
+      "titulo_completo": "Figura A8. Precio regular y actual de productos con y sin rebaja",
+      "ubicacion": "anexo A",
+      "archivo": "reports/figures/fig12_precio_con_vs_sin_rebaja.png",
+      "notebook": "03_analysis.ipynb",
+      "seccion": "F",
+      "pregunta": "F. ¿Los productos con rebaja tienen un nivel de precio distinto?",
+      "hallazgo_cifra": "Precio regular mediano S/ 9,00 con rebaja vs S/ 7,90 sin rebaja; Spearman ρ (precio actual vs rebaja) = -0,06",
+      "n": 1437
+    }
+  },
+  "figures_nota": "Numeración idéntica a la del informe final: Figura 1 = reports/figures/pipeline.png (diagrama del pipeline, generado por scripts/diagrama_pipeline.py); Figuras 2–12 en el cuerpo del informe y Figuras A1–A8 en su Anexo A (figA1–figA5, fig08, fig09 y fig12). La presentación usa la misma numeración. Los textos de hallazgo usan coma decimal.",
+  "tablas_exportadas": [
+    "anomalias_descuentos_menores_3pct.csv",
+    "anomalias_top_descuento_pct.csv",
+    "anomalias_top_descuento_soles.csv",
+    "anomalias_top_precio_actual.csv",
+    "bells_vs_resto_por_category_group.csv",
+    "bells_vs_resto_precio_unitario.csv",
+    "crosstab_intensidad_por_category_group.csv",
+    "descuento_mediano_por_marca_npromo5.csv",
+    "descuento_por_cuartil_precio.csv",
+    "distribucion_promotion_intensity.csv",
+    "marcas_n10_promociones.csv",
+    "outliers_precio_actual.csv",
+    "outliers_precio_por_category_group.csv",
+    "packs_segmentos.csv",
+    "precio_con_vs_sin_rebaja.csv",
+    "precio_por_category_group.csv",
+    "precio_unitario_subcategorias_n15.csv",
+    "promo_rate_por_category_group.csv",
+    "registro_calidad.csv",
+    "resumen_por_category_group.csv",
+    "sensibilidad_presentation_imputed.csv",
+    "subcategorias_n15.csv",
+    "top_marcas_por_productos.csv",
+    "top_marcas_por_promociones.csv"
+  ],
+  "usuario_objetivo": "Analista que monitorea precios y promociones publicados en el canal web de Abarrotes (p. ej., en un equipo de pricing o category management, de inteligencia de mercado o de una marca proveedora); seguimiento descriptivo de la oferta, sin evaluar ventas ni efectividad de promociones.",
+  "insights_candidatos": [
+    {
+      "titulo": "1. La frecuencia promocional se concentra en pocos grupos y el promedio global la oculta",
+      "evidencia": "Tasa global 33,3 % (479/1437). Packs Abarrotes 100,0 % (n = 60), Arroz 61,8 % (n = 34) y Fideos, Pastas y Salsas 52,9 % (n = 140), frente a Comidas Instantáneas 10,5 % (n = 38).",
+      "interpretacion": "En la muestra extraída, la presencia de rebajas no es uniforme: se concentra en tres grupos y, dentro de ellos, en subcategorías específicas.",
+      "implicacion": "Un promedio global de promociones oculta diferencias de más de 50 p.p. entre grupos.",
+      "recomendacion": "Para el analista de monitoreo: reportar la tasa promocional por grupo de categoría y subcategoría (con n e IC 95 %) y no solo la global."
+    },
+    {
+      "titulo": "2. El descuento típico es moderado (10–20 %) y no se asocia al nivel de precio",
+      "evidencia": "Entre 479 promocionados: mediana 14,71 %, IQR 10,38–20,08 %, máximo 38,14 %; 21 productos (4,4 %) superan 30 %; nivel Medio = 52,0 % de los promocionados. Spearman ρ precio actual vs discount_pct = 0,02 (n = 479); ρ precio regular vs ahorro en S/ = 0,81.",
+      "interpretacion": "El estándar promocional observable es una rebaja de 10 % a 20 %; productos baratos y caros muestran rebajas porcentuales similares (sin asociación monótona con el precio), y el ahorro en soles crece con el precio por construcción.",
+      "implicacion": "Un descuento superior a 20 % (≈ Q3) ya ubica a un producto en el cuarto superior; el porcentaje y el monto de descuento describen aspectos distintos de una promoción.",
+      "recomendacion": "Para el analista de monitoreo: usar 10 % y 20 % como umbrales de referencia, revisar manualmente los descuentos > 30 % y las rebajas < 3 %, y comparar profundidad con discount_pct, no con el ahorro en soles."
+    },
+    {
+      "titulo": "3. BELL'S: amplia presencia, rebajas poco frecuentes y menor precio publicado por kg o litro",
+      "evidencia": "BELL'S tiene 184 productos (12,8 % de la muestra) y tasa 10,3 % (19/184) vs 36,7 % del resto (n = 1253; Fisher p < 0,001); su tasa esperada por mezcla de grupos sería 29,6 %; es menor que la del resto en 7 de 9 grupos donde tiene ≥ 5 productos; descuento mediano cuando rebaja 8,60 % vs 15,00 % del resto. Su precio mediano por kg o litro es menor que el del resto en 9 de 10 subcategorías comparables.",
+      "interpretacion": "En esta muestra, BELL'S aparece rara vez con rebaja, también dentro de los grupos comparables; la diferencia persiste al controlar por su mezcla de categorías. Su precio publicado por kg o litro suele ser menor que el de otras marcas de la misma subcategoría.",
+      "implicacion": "La tasa promocional de una marca no basta para describir su nivel de precio publicado; los datos no permiten explicar el motivo de la diferencia.",
+      "recomendacion": "Para el analista de monitoreo: reportar BELL'S por separado (tasa promocional y precio por kg o litro dentro de subcategoría) y verificar el patrón en varias fechas antes de describirlo como estable."
+    },
+    {
+      "titulo": "4. Comportamiento polarizado entre marcas, entrelazado con la categoría",
+      "evidencia": "Entre 32 marcas con n ≥ 10: 5 con tasa ≥ 90 % (PRIMOR 100,0 % n = 11, NICOLINI 92,9 % n = 14, DON VITTORIO 91,7 % n = 24, MOLITALIA 91,3 % n = 23, ALACENA 90,0 % n = 30) y 3 con 0 % (TESORO DEL CAMPO n = 13, BARCIDDA n = 12, TIYAPUY n = 12). Con n entre 10 y 14, el IC 95 % tiene un ancho de 22,8–51,9 p.p.",
+      "interpretacion": "La frecuencia promocional observable varía fuertemente entre marcas. Marca y categoría están entrelazadas (varias marcas con tasa ≥ 90 % publican sobre todo en Fideos, Pastas y Salsas), por lo que la diferencia no puede atribuirse solo a la marca.",
+      "implicacion": "Los rankings de marcas deben acompañarse de n, intervalo de confianza y tasa esperada por mezcla de grupos.",
+      "recomendacion": "Para el analista de monitoreo: exigir n ≥ 10 y mostrar el IC antes de rankear marcas, y seguir en extracciones posteriores a las 5 marcas con tasa ≥ 90 % y a las 3 con 0 %."
+    },
+    {
+      "titulo": "5. Packs Abarrotes: una categoría con rebaja en el 100 % de sus productos que eleva la tasa global",
+      "evidencia": "Packs Abarrotes: 60/60 con rebaja, descuento mediano 19,85 % vs 12,92 % del resto; los packs de otras categorías: 0/4. Sin la categoría, la tasa global pasa de 33,3 % a 30,4 % (n = 1377).",
+      "interpretacion": "La alta frecuencia de rebajas se asocia a la categoría Packs Abarrotes del listado y no al formato pack: los packs ubicados en otras categorías no muestran rebaja. Podría reflejar cómo el sitio arma esa categoría, lo que no puede verificarse con estos datos.",
+      "implicacion": "Incluir Packs Abarrotes eleva la tasa global en 2,9 p.p.",
+      "recomendacion": "Para el analista de monitoreo: reportar la tasa promocional con y sin la categoría Packs Abarrotes y analizar esa categoría como un segmento propio."
+    }
+  ],
+  "insights_nota": "Lista única de cinco insights, con los mismos títulos en el informe final (§9), el README (§8), la presentación (diapositiva 16) y el guion (§3.F). La relación precio–descuento (Spearman) forma parte del insight 2."
+}

@@ -1,0 +1,37 @@
+subcategory,category_group,n,n_promo,promo_rate,precio_mediano,descuento_mediano_promocionados,grupo_sin_nivel3,ic95_inf,ic95_sup
+Packs Abarrotes,Packs Abarrotes,60,60,100.0,9.7,19.85,True,94.0,100.0
+Arroz Extra,Arroz,22,17,77.3,20.2,10.42,False,56.6,89.9
+Fideos Cortos,"Fideos, Pastas y Salsas",46,30,65.2,1.8,11.76,False,50.8,77.3
+Fideos Largos,"Fideos, Pastas y Salsas",38,24,63.2,3.9,16.9,False,47.3,76.6
+Papas,Snacks y Piqueos,44,22,50.0,6.9,12.82,False,35.8,64.2
+Galletas Dulces,Galletas y Golosinas,106,51,48.1,5.0,10.91,False,38.8,57.5
+Mayonesa,"Salsas, Cremas y Condimentos",30,13,43.3,10.4,12.79,False,27.4,60.8
+Ají y Rocoto,"Salsas, Cremas y Condimentos",28,12,42.9,10.05,9.78,False,26.5,60.9
+Pescados en Conserva,Conservas,55,22,40.0,5.9,10.82,False,28.1,53.2
+Ketchup,"Salsas, Cremas y Condimentos",15,6,40.0,11.0,12.4,False,19.8,64.3
+Galletas Saladas,Galletas y Golosinas,37,14,37.8,4.9,13.9,False,24.1,53.9
+Salsas de Tomate,"Fideos, Pastas y Salsas",24,9,37.5,5.85,11.24,False,21.2,57.3
+Chocolates y Lentejas,Chocolatería,64,23,35.9,14.9,20.09,False,25.3,48.2
+Maíz,Snacks y Piqueos,38,13,34.2,5.2,18.87,False,21.2,50.1
+Sémola y Fideos Especiales,"Fideos, Pastas y Salsas",28,9,32.1,14.9,15.87,False,17.9,50.7
+Bombones,Chocolatería,19,6,31.6,16.0,26.02,False,15.4,54.0
+Otras Golosinas,Galletas y Golosinas,29,9,31.0,10.5,15.56,False,17.3,49.2
+Mostaza,"Salsas, Cremas y Condimentos",21,6,28.6,13.9,19.48,False,13.8,50.0
+Otros Endulzantes,Azúcar y Endulzantes,25,7,28.0,24.0,19.88,False,14.3,47.6
+"Camotes, Chifles y Yucas",Snacks y Piqueos,34,8,23.5,7.7,12.5,False,12.4,40.0
+Aceite de Oliva,Aceite,30,7,23.3,33.4,15.0,False,11.8,40.9
+Piqueos Mixtos,Snacks y Piqueos,29,6,20.7,7.9,18.48,False,9.8,38.4
+"Aderezos, Sazonadores y Otros","Salsas, Cremas y Condimentos",20,4,20.0,5.300000000000001,10.58,False,8.1,41.6
+Gomitas y Gomas de Mascar,Galletas y Golosinas,34,6,17.6,5.1,11.64,False,8.3,33.5
+Vinagre,"Salsas, Cremas y Condimentos",24,4,16.7,5.85,9.9,False,6.7,35.9
+Sal y Pimienta,"Salsas, Cremas y Condimentos",40,6,15.0,8.9,11.16,False,7.1,29.1
+"Maní, Habas, Pistachos y Semillas",Snacks y Piqueos,21,3,14.3,8.0,15.28,False,5.0,34.6
+Sillao,"Salsas, Cremas y Condimentos",29,4,13.8,12.9,6.98,False,5.5,30.6
+Salsas especiales,"Salsas, Cremas y Condimentos",37,5,13.5,11.9,10.01,False,5.9,28.0
+Otros Condimentos,"Salsas, Cremas y Condimentos",31,4,12.9,3.6,11.95,False,5.1,28.9
+Verduras en Conserva,Conservas,16,2,12.5,9.05,6.63,False,3.5,36.0
+Caramelos y Chupetes,Galletas y Golosinas,48,6,12.5,8.15,11.58,False,5.9,24.7
+Sopas,Comidas Instantáneas,27,3,11.1,3.4,5.0,False,3.9,28.1
+Frutos Secos,Snacks y Piqueos,51,5,9.8,9.9,13.91,False,4.3,21.0
+Tabletas de Chocolate,Chocolatería,19,1,5.3,9.9,10.0,False,0.9,24.6
+Aceitunas en Conserva,Conservas,24,0,0.0,10.5,,False,0.0,13.8
