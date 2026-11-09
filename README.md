@@ -59,12 +59,6 @@ proyecto_plazavea/
 │   ├── 01_acquisition.ipynb         # adquisición (scraping, Colab); documenta el origen, no se re-ejecuta
 │   ├── 02_preprocessing.ipynb       # limpieza, integración, outliers, transformación, features, reducción
 │   └── 03_analysis.ipynb            # análisis A–G, figuras, tablas y metrics.json
-├── scripts/
-│   ├── diagrama_pipeline.py         # genera reports/figures/pipeline.png (Figura 1 del informe)
-│   ├── figuras_presentacion.py      # versiones legibles a tamaño de proyección (reports/figures/presentacion/)
-│   └── build_diccionario_final.py   # genera docs/diccionario_final.docx desde los CSV (opcional)
-├── templates/
-│   └── Formato_Diccionario_de_datos.docx   # plantilla del diccionario que usa build_diccionario_final.py
 ├── reports/
 │   ├── figures/                     # 19 figuras de los notebooks + pipeline.png; numeración del informe:
 │   │                                #   Figuras 1–12 en el cuerpo (pipeline, fig01–fig07, fig10, fig11, fig13, fig14)
@@ -73,14 +67,11 @@ proyecto_plazavea/
 │   ├── metrics.json                 # fuente única de todas las cifras del informe y la presentación
 │   └── metrics_preprocesamiento.json
 └── docs/
-    ├── diccionario_inicial.pdf / .docx   # diccionario de la Parte I (con nota de discrepancias)
-    ├── diccionario_final.pdf / .docx     # diccionario final (21 variables + 8 de trazabilidad)
+    ├── diccionario_inicial.pdf           # diccionario de la Parte I (con nota de discrepancias)
+    ├── diccionario_final.pdf             # diccionario final (21 variables + 8 de trazabilidad)
     ├── auditoria_inicial.md              # auditoría del CSV raw
-    ├── informe_final.pdf / .docx         # documento maestro de la Parte II
-    ├── presentacion_final.pptx / .pdf    # presentación
-    ├── guion_presentacion.md             # guion de la exposición
-    ├── checklist_rubrica.md              # criterios de la rúbrica → evidencia
-    └── PLAN_COMMITS.md                   # secuencia de commits y publicación en GitHub
+    ├── informe_final.pdf                 # documento maestro de la Parte II
+    └── presentacion_final.pptx / .pdf    # presentación
 ```
 
 ## 5. Dependencias
@@ -191,20 +182,3 @@ Distribución propuesta y acordada por el equipo (asignación del equipo). Todos
 | Diego Mauricio Alarcon Ballivian | 202410104 | Análisis exploratorio y visualizaciones (preguntas A–G)                                                                    | `03_analysis.ipynb`; `reports/figures/`, `reports/tables/`, `reports/metrics.json`; sección 8 del informe; commits `feat(analysis):`                                                               |
 | Joaquin Emilio Justo Guillen     | 202410394 | Repositorio GitHub, README, requirements y reproducibilidad                                                                | `README.md`, `requirements.txt`, `.gitignore`, `scripts/`, estructura de carpetas, verificación de ejecución; sección 11 del informe; commits `chore:`, `build:` y enlace final                    |
 | Sofía Fridkas García Chaupis     | 202310531 | Contexto y objetivos actualizados, insights, conclusiones, edición final del informe y presentación                        | Secciones 1–3, 9 y 10 del informe; `docs/informe_final.pdf`; `docs/presentacion_final.pptx`; commit `docs: informe final y presentación`                                                           |
-
-## 12. Convención de commits sugerida
-
-Formato `tipo(ámbito): descripción en imperativo`, un commit por unidad de trabajo verificable, firmado por el integrante responsable:
-
-| Tipo             | Uso                                         | Ejemplo                                                      |
-| ---------------- | ------------------------------------------- | ------------------------------------------------------------ |
-| `chore`          | Estructura, configuración, `.gitignore`     | `chore: estructura inicial, README y .gitignore`             |
-| `data`           | Datasets en `data/`                         | `data: agrega dataset raw oficial (1438 x 12)`               |
-| `feat(prep)`     | Limpieza e integración (notebook 02)        | `feat(prep): outliers, transformación y registro de calidad` |
-| `feat(features)` | Variables derivadas y dataset final         | `feat(features): variables derivadas y dataset final`        |
-| `feat(analysis)` | Análisis y figuras (notebook 03)            | `feat(analysis): análisis A–G, figuras y metrics.json`       |
-| `docs`           | Diccionarios, informe, presentación, README | `docs: diccionario final`                                    |
-| `build`          | Dependencias y reproducibilidad             | `build: requirements.txt y verificación de reproducibilidad` |
-| `fix`            | Corrección de un error                      | `fix(analysis): excluye pipeline.png del control de figuras` |
-
-El plan de commits por integrante, con autor y archivos, está en [`docs/PLAN_COMMITS.md`](docs/PLAN_COMMITS.md); coincide con la Tabla 23 del informe. La correspondencia con la rúbrica está en [`docs/checklist_rubrica.md`](docs/checklist_rubrica.md).
