@@ -4,7 +4,7 @@
 Universidad de Ingeniería y Tecnología (UTEC), Facultad de Computación, Carrera de Data Science · Lima, 2026
 Profesor: Jose Luis Espinoza Melgarejo
 
-> Repositorio: `[enlace al repositorio GitHub del equipo]` (por completar con la URL pública antes de la entrega).
+> Repositorio: https://github.com/sebastianloli/PROYECTO-ACD.git
 
 ---
 
@@ -21,6 +21,7 @@ En la Parte I se construyó, mediante web scraping, el dataset oficial (**1438 r
 **Objetivo general.** Describir la distribución de los precios publicados y la intensidad promocional observable (frecuencia y profundidad de las rebajas reconstruidas a partir de los precios) entre grupos de categoría, subcategorías y marcas de Abarrotes de Plaza Vea Perú, a partir de una muestra de 30 páginas extraída en una fecha, mediante un pipeline reproducible de preprocesamiento y análisis.
 
 **Objetivos específicos.**
+
 1. Construir un dataset analítico limpio, trazable y reproducible, con el descuento reconstruido y cada decisión de calidad documentada.
 2. Describir el nivel y la dispersión de los precios por grupo de categoría y, normalizados por contenido, dentro de subcategorías.
 3. Medir la frecuencia promocional (`promo_rate`) por grupo, subcategoría y marca, siempre con su n e intervalo de confianza.
@@ -30,14 +31,14 @@ En la Parte I se construyó, mediante web scraping, el dataset oficial (**1438 r
 
 ## 3. Fuente de datos
 
-| Aspecto | Detalle |
-|---|---|
-| Fuente | Listado web de la categoría Abarrotes de Plaza Vea Perú (`www.plazavea.com.pe/abarrotes`) |
-| Técnica | Web scraping con Selenium + BeautifulSoup (notebook `01_acquisition.ipynb`, Google Colab) |
-| Cobertura | 30 de aproximadamente 65 páginas del listado, en el orden que muestra el sitio (muestra, no censo) |
-| Momento | Snapshot único: corrida de extracción de la Parte I (el CSV no incluye un campo de fecha) |
+| Aspecto         | Detalle                                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------------------- |
+| Fuente          | Listado web de la categoría Abarrotes de Plaza Vea Perú (`www.plazavea.com.pe/abarrotes`)            |
+| Técnica         | Web scraping con Selenium + BeautifulSoup (notebook `01_acquisition.ipynb`, Google Colab)            |
+| Cobertura       | 30 de aproximadamente 65 páginas del listado, en el orden que muestra el sitio (muestra, no censo)   |
+| Momento         | Snapshot único: corrida de extracción de la Parte I (el CSV no incluye un campo de fecha)            |
 | Dataset oficial | `data/raw/productos_plazavea_raw.csv`: 1438 registros × 12 variables, 1438 SKU únicos, sin modificar |
-| Integridad | sha256 `3a3833e8312f8d27566083b81cd02a86535055587ba38f25de4e5d05f4348f3a` |
+| Integridad      | sha256 `3a3833e8312f8d27566083b81cd02a86535055587ba38f25de4e5d05f4348f3a`                            |
 
 > Nota de trazabilidad: las salidas visibles en `01_acquisition.ipynb` (1407 filas → 1397 SKU) corresponden a otra corrida del mismo código. La corrida oficial es la del CSV entregado en la Parte I (1438 registros).
 
@@ -118,20 +119,20 @@ python scripts/build_diccionario_final.py      # usa la plantilla versionada en 
 soffice --headless --convert-to pdf --outdir docs docs/diccionario_final.docx
 ```
 
-El orden es obligatorio: **01 (opcional, Colab) → 02 → 03**. Los notebooks usan rutas relativas (`../data`, `../reports`) y deben ejecutarse desde la carpeta `notebooks/` (nbconvert lo hace automáticamente). Ejecutar 02 y 03 tarda menos de un minuto en un equipo convencional. También pueden abrirse con Jupyter (`jupyter notebook notebooks/`) y ejecutarse con *Run All*.
+El orden es obligatorio: **01 (opcional, Colab) → 02 → 03**. Los notebooks usan rutas relativas (`../data`, `../reports`) y deben ejecutarse desde la carpeta `notebooks/` (nbconvert lo hace automáticamente). Ejecutar 02 y 03 tarda menos de un minuto en un equipo convencional. También pueden abrirse con Jupyter (`jupyter notebook notebooks/`) y ejecutarse con _Run All_.
 
 ## 7. Pipeline de datos
 
 Seis fases, las mismas de la Figura 1 y la Tabla 7 del informe y de la diapositiva 5 de la presentación.
 
-| Fase | Entrada | Proceso | Salida | Dónde |
-|---|---|---|---|---|
-| 1. Ingestión | Listado web Abarrotes (30 páginas) | Selenium renderiza el JavaScript; BeautifulSoup extrae 12 atributos por tarjeta | CSV raw | `01_acquisition.ipynb` (Colab) |
-| 2. Zona raw | CSV de la Parte I | Se conserva intacto y se verifica con sha256 | `data/raw/productos_plazavea_raw.csv` (1438 × 12) | `data/raw/` |
-| 3. Transformación | Zona raw | Perfil, integración y control de duplicados por `sku`, reglas de dominio, imputación de `presentation` (+ indicador), normalización de marcas, outliers IQR marcados, jerarquía de categoría, descuento reconstruido, contenido y precio unitario, intensidad promocional, reducción de columnas y filtro de alcance (`in_scope`) | Dataset validado + variables derivadas | `02_preprocessing.ipynb` §1–10 |
-| 4. Zona processed | Salida de 3 | Exportación UTF-8 y registro de calidad | `productos_plazavea_clean.csv` (1438 × 29), `productos_plazavea_final.csv` (1437 × 21), `registro_calidad.csv`, `metrics_preprocesamiento.json` | `data/processed/`, `reports/` |
-| 5. Preparación analítica | Dataset final | Preguntas A–G con n mínimo, IC 95 % de Wilson, Spearman, χ²/Fisher | Figuras, tablas, `metrics.json` | `03_analysis.ipynb` |
-| 6. Consumo | Métricas, figuras y datasets | Diccionario, informe y presentación alimentados por `metrics.json`; publicación en GitHub | `docs/` | `scripts/`, `docs/` |
+| Fase                     | Entrada                            | Proceso                                                                                                                                                                                                                                                                                                                           | Salida                                                                                                                                          | Dónde                          |
+| ------------------------ | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| 1. Ingestión             | Listado web Abarrotes (30 páginas) | Selenium renderiza el JavaScript; BeautifulSoup extrae 12 atributos por tarjeta                                                                                                                                                                                                                                                   | CSV raw                                                                                                                                         | `01_acquisition.ipynb` (Colab) |
+| 2. Zona raw              | CSV de la Parte I                  | Se conserva intacto y se verifica con sha256                                                                                                                                                                                                                                                                                      | `data/raw/productos_plazavea_raw.csv` (1438 × 12)                                                                                               | `data/raw/`                    |
+| 3. Transformación        | Zona raw                           | Perfil, integración y control de duplicados por `sku`, reglas de dominio, imputación de `presentation` (+ indicador), normalización de marcas, outliers IQR marcados, jerarquía de categoría, descuento reconstruido, contenido y precio unitario, intensidad promocional, reducción de columnas y filtro de alcance (`in_scope`) | Dataset validado + variables derivadas                                                                                                          | `02_preprocessing.ipynb` §1–10 |
+| 4. Zona processed        | Salida de 3                        | Exportación UTF-8 y registro de calidad                                                                                                                                                                                                                                                                                           | `productos_plazavea_clean.csv` (1438 × 29), `productos_plazavea_final.csv` (1437 × 21), `registro_calidad.csv`, `metrics_preprocesamiento.json` | `data/processed/`, `reports/`  |
+| 5. Preparación analítica | Dataset final                      | Preguntas A–G con n mínimo, IC 95 % de Wilson, Spearman, χ²/Fisher                                                                                                                                                                                                                                                                | Figuras, tablas, `metrics.json`                                                                                                                 | `03_analysis.ipynb`            |
+| 6. Consumo               | Métricas, figuras y datasets       | Diccionario, informe y presentación alimentados por `metrics.json`; publicación en GitHub                                                                                                                                                                                                                                         | `docs/`                                                                                                                                         | `scripts/`, `docs/`            |
 
 ## 8. Principales resultados
 
@@ -140,14 +141,14 @@ Todas las cifras provienen de `reports/metrics.json` (dataset final, n = 1437 pr
 - **Dataset final:** 1437 productos × 21 variables, 271 marcas, 12 grupos de categoría y 70 subcategorías; sin nulos ni duplicados. El descuento reconstruido identifica **479 productos con rebaja** y 958 sin rebaja.
 - **Precios:** mediana S/ 7,90 y media S/ 10,71 (asimetría 2,79); el 64,23 % de los productos cuesta hasta S/ 10. Hay 74 productos (5,15 %) sobre el límite IQR de S/ 27,34, conservados por ser productos válidos (aceites de oliva, endulzantes, displays).
 - **Frecuencia promocional:** tasa global de 33,33 % (479/1437; IC 95 % 30,9–35,8). Varía fuertemente por grupo: Packs Abarrotes 100,0 % (n = 60), Arroz 61,8 % (n = 34), Fideos, Pastas y Salsas 52,9 % (n = 140), frente a 10,5 % en Comidas Instantáneas (n = 38). Sin Packs Abarrotes, la tasa global es 30,43 %.
-- **Profundidad de las rebajas:** entre los 479 promocionados, mediana 14,71 %, IQR 10,38–20,08 % y máximo 38,14 %; solo 21 productos (4,38 %) superan el 30 %. El nivel *Medio* (10–20 %] reúne el 52,0 % de los promocionados. El % de descuento no se asocia al nivel de precio (Spearman ρ = 0,02).
+- **Profundidad de las rebajas:** entre los 479 promocionados, mediana 14,71 %, IQR 10,38–20,08 % y máximo 38,14 %; solo 21 productos (4,38 %) superan el 30 %. El nivel _Medio_ (10–20 %] reúne el 52,0 % de los promocionados. El % de descuento no se asocia al nivel de precio (Spearman ρ = 0,02).
 - **Marcas:** BELL'S es la marca con más productos (184; 12,8 % de la muestra) y presenta una tasa de rebaja de 10,33 %, frente a 36,71 % del resto de marcas.
 - **Precio por contenido:** en 32 subcategorías con n ≥ 15 y contenido validado, el cociente Q3/Q1 del precio por kg o litro va de 1,20 (Arroz Extra) a 9,35 (Sal y Pimienta), con mediana 1,90.
 
 **Insights** (los mismos cinco, con los mismos títulos, del informe §9, la diapositiva 16 y `metrics.json` → `insights_candidatos`):
 
 1. **La frecuencia promocional se concentra en pocos grupos y el promedio global la oculta:** Packs Abarrotes 100,0 % (60/60), Arroz 61,8 % y Fideos, Pastas y Salsas 52,9 %, frente a 10,5 % en Comidas Instantáneas; global 33,3 %.
-2. **El descuento típico es moderado (10–20 %) y no se asocia al nivel de precio:** mediana 14,71 %; nivel *Medio* = 52,0 % de los promocionados; Spearman ρ = 0,02 entre precio actual y `discount_pct`.
+2. **El descuento típico es moderado (10–20 %) y no se asocia al nivel de precio:** mediana 14,71 %; nivel _Medio_ = 52,0 % de los promocionados; Spearman ρ = 0,02 entre precio actual y `discount_pct`.
 3. **BELL'S: amplia presencia, rebajas poco frecuentes y menor precio publicado por kg o litro:** 184 productos, tasa 10,33 % frente a 36,71 % del resto y 29,6 % esperada por su mezcla de grupos; precio por kg o litro menor en 9 de 10 subcategorías comparables.
 4. **Comportamiento polarizado entre marcas, entrelazado con la categoría:** entre 32 marcas con n ≥ 10, cinco alcanzan o superan el 90 % (PRIMOR, NICOLINI, DON VITTORIO, MOLITALIA, ALACENA) y tres tienen 0 % (TESORO DEL CAMPO, BARCIDDA, TIYAPUY).
 5. **Packs Abarrotes: una categoría con rebaja en el 100 % de sus productos que eleva la tasa global:** 60/60 con rebaja frente a 0/4 packs de otras categorías; sin la categoría, la tasa global es 30,43 %.
@@ -163,16 +164,17 @@ Todas las cifras provienen de `reports/metrics.json` (dataset final, n = 1437 pr
 
 ## 10. Reproducibilidad
 
-| Notebook / script | Lee | Produce |
-|---|---|---|
-| `01_acquisition.ipynb` | Sitio web (en vivo) | CSV raw (snapshot nuevo en cada ejecución; no se re-ejecuta) |
-| `02_preprocessing.ipynb` | `data/raw/productos_plazavea_raw.csv` | `data/processed/productos_plazavea_clean.csv`, `data/processed/productos_plazavea_final.csv`, `reports/metrics_preprocesamiento.json`, `reports/tables/registro_calidad.csv`, `reports/tables/outliers_precio_actual.csv`, figuras `fig01`, `figA1`–`figA3` |
-| `03_analysis.ipynb` | `data/processed/productos_plazavea_final.csv`, `reports/metrics_preprocesamiento.json` | `reports/figures/fig02`–`fig14`, `figA4`–`figA5`, las demás tablas de `reports/tables/` y `reports/metrics.json` |
-| `scripts/diagrama_pipeline.py` | — | `reports/figures/pipeline.png` |
-| `scripts/figuras_presentacion.py` | `data/processed/productos_plazavea_final.csv`, `reports/tables/` | `reports/figures/presentacion/slide_*.png` |
-| `scripts/build_diccionario_final.py` | CSV procesados + `templates/Formato_Diccionario_de_datos.docx` | `docs/diccionario_final.docx` |
+| Notebook / script                    | Lee                                                                                    | Produce                                                                                                                                                                                                                                                     |
+| ------------------------------------ | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `01_acquisition.ipynb`               | Sitio web (en vivo)                                                                    | CSV raw (snapshot nuevo en cada ejecución; no se re-ejecuta)                                                                                                                                                                                                |
+| `02_preprocessing.ipynb`             | `data/raw/productos_plazavea_raw.csv`                                                  | `data/processed/productos_plazavea_clean.csv`, `data/processed/productos_plazavea_final.csv`, `reports/metrics_preprocesamiento.json`, `reports/tables/registro_calidad.csv`, `reports/tables/outliers_precio_actual.csv`, figuras `fig01`, `figA1`–`figA3` |
+| `03_analysis.ipynb`                  | `data/processed/productos_plazavea_final.csv`, `reports/metrics_preprocesamiento.json` | `reports/figures/fig02`–`fig14`, `figA4`–`figA5`, las demás tablas de `reports/tables/` y `reports/metrics.json`                                                                                                                                            |
+| `scripts/diagrama_pipeline.py`       | —                                                                                      | `reports/figures/pipeline.png`                                                                                                                                                                                                                              |
+| `scripts/figuras_presentacion.py`    | `data/processed/productos_plazavea_final.csv`, `reports/tables/`                       | `reports/figures/presentacion/slide_*.png`                                                                                                                                                                                                                  |
+| `scripts/build_diccionario_final.py` | CSV procesados + `templates/Formato_Diccionario_de_datos.docx`                         | `docs/diccionario_final.docx`                                                                                                                                                                                                                               |
 
 Controles de reproducibilidad:
+
 - **Hash del raw:** `sha256sum data/raw/productos_plazavea_raw.csv` debe devolver `3a3833e8312f8d27566083b81cd02a86535055587ba38f25de4e5d05f4348f3a`.
 - **Validaciones `assert`:** el notebook 02 se detiene si el resultado no cumple las cifras oficiales (1438 registros limpios, 1437 analíticos, 0 nulos y 0 duplicados en el final, `current_price ≤ regular_price`, coherencia entre `has_discount` y `discount_pct`).
 - **Determinismo:** la ejecución desde cero de 02 → 03 reproduce byte a byte los dos CSV procesados (sha256 del final: `c5137dcd32311cdab70042a0b73f2d84ed84e4adde2ae0678ffbbb80844d6023`; del limpio: `44b55d03be6614150cb8d3d7445e309eb28e098667d6912c24c0fd9f51642800`), las tablas, las figuras y `metrics.json`.
@@ -182,27 +184,27 @@ Controles de reproducibilidad:
 
 Distribución propuesta y acordada por el equipo (asignación del equipo). Todos los integrantes preparan y exponen la presentación final.
 
-| Integrante | Código | Responsabilidad | Entregables y evidencia |
-|---|---|---|---|
-| Sebastian Loli Gonzalez | 202420022 | Pipeline y notebook de preprocesamiento: integración, reglas de dominio, valores faltantes, outliers y registro de calidad | `02_preprocessing.ipynb` (§1–6 y 9); `reports/tables/registro_calidad.csv`; secciones 5 y 6 del informe; commits `data:` y `feat(prep):` |
-| Piero Max Ortiz Villafuerte | 202410409 | Feature engineering, reducción de datos, dataset final y diccionario | `02_preprocessing.ipynb` (§7, 8 y 10); `data/processed/productos_plazavea_final.csv`; `docs/diccionario_final.pdf`; secciones 4 y 7 del informe; commits `feat(features):` y `docs: diccionario …` |
-| Diego Mauricio Alarcon Ballivian | 202410104 | Análisis exploratorio y visualizaciones (preguntas A–G) | `03_analysis.ipynb`; `reports/figures/`, `reports/tables/`, `reports/metrics.json`; sección 8 del informe; commits `feat(analysis):` |
-| Joaquin Emilio Justo Guillen | 202410394 | Repositorio GitHub, README, requirements y reproducibilidad | `README.md`, `requirements.txt`, `.gitignore`, `scripts/`, estructura de carpetas, verificación de ejecución; sección 11 del informe; commits `chore:`, `build:` y enlace final |
-| Sofía Fridkas García Chaupis | 202310531 | Contexto y objetivos actualizados, insights, conclusiones, edición final del informe y presentación | Secciones 1–3, 9 y 10 del informe; `docs/informe_final.pdf`; `docs/presentacion_final.pptx`; commit `docs: informe final y presentación` |
+| Integrante                       | Código    | Responsabilidad                                                                                                            | Entregables y evidencia                                                                                                                                                                            |
+| -------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sebastian Loli Gonzalez          | 202420022 | Pipeline y notebook de preprocesamiento: integración, reglas de dominio, valores faltantes, outliers y registro de calidad | `02_preprocessing.ipynb` (§1–6 y 9); `reports/tables/registro_calidad.csv`; secciones 5 y 6 del informe; commits `data:` y `feat(prep):`                                                           |
+| Piero Max Ortiz Villafuerte      | 202410409 | Feature engineering, reducción de datos, dataset final y diccionario                                                       | `02_preprocessing.ipynb` (§7, 8 y 10); `data/processed/productos_plazavea_final.csv`; `docs/diccionario_final.pdf`; secciones 4 y 7 del informe; commits `feat(features):` y `docs: diccionario …` |
+| Diego Mauricio Alarcon Ballivian | 202410104 | Análisis exploratorio y visualizaciones (preguntas A–G)                                                                    | `03_analysis.ipynb`; `reports/figures/`, `reports/tables/`, `reports/metrics.json`; sección 8 del informe; commits `feat(analysis):`                                                               |
+| Joaquin Emilio Justo Guillen     | 202410394 | Repositorio GitHub, README, requirements y reproducibilidad                                                                | `README.md`, `requirements.txt`, `.gitignore`, `scripts/`, estructura de carpetas, verificación de ejecución; sección 11 del informe; commits `chore:`, `build:` y enlace final                    |
+| Sofía Fridkas García Chaupis     | 202310531 | Contexto y objetivos actualizados, insights, conclusiones, edición final del informe y presentación                        | Secciones 1–3, 9 y 10 del informe; `docs/informe_final.pdf`; `docs/presentacion_final.pptx`; commit `docs: informe final y presentación`                                                           |
 
 ## 12. Convención de commits sugerida
 
 Formato `tipo(ámbito): descripción en imperativo`, un commit por unidad de trabajo verificable, firmado por el integrante responsable:
 
-| Tipo | Uso | Ejemplo |
-|---|---|---|
-| `chore` | Estructura, configuración, `.gitignore` | `chore: estructura inicial, README y .gitignore` |
-| `data` | Datasets en `data/` | `data: agrega dataset raw oficial (1438 x 12)` |
-| `feat(prep)` | Limpieza e integración (notebook 02) | `feat(prep): outliers, transformación y registro de calidad` |
-| `feat(features)` | Variables derivadas y dataset final | `feat(features): variables derivadas y dataset final` |
-| `feat(analysis)` | Análisis y figuras (notebook 03) | `feat(analysis): análisis A–G, figuras y metrics.json` |
-| `docs` | Diccionarios, informe, presentación, README | `docs: diccionario final` |
-| `build` | Dependencias y reproducibilidad | `build: requirements.txt y verificación de reproducibilidad` |
-| `fix` | Corrección de un error | `fix(analysis): excluye pipeline.png del control de figuras` |
+| Tipo             | Uso                                         | Ejemplo                                                      |
+| ---------------- | ------------------------------------------- | ------------------------------------------------------------ |
+| `chore`          | Estructura, configuración, `.gitignore`     | `chore: estructura inicial, README y .gitignore`             |
+| `data`           | Datasets en `data/`                         | `data: agrega dataset raw oficial (1438 x 12)`               |
+| `feat(prep)`     | Limpieza e integración (notebook 02)        | `feat(prep): outliers, transformación y registro de calidad` |
+| `feat(features)` | Variables derivadas y dataset final         | `feat(features): variables derivadas y dataset final`        |
+| `feat(analysis)` | Análisis y figuras (notebook 03)            | `feat(analysis): análisis A–G, figuras y metrics.json`       |
+| `docs`           | Diccionarios, informe, presentación, README | `docs: diccionario final`                                    |
+| `build`          | Dependencias y reproducibilidad             | `build: requirements.txt y verificación de reproducibilidad` |
+| `fix`            | Corrección de un error                      | `fix(analysis): excluye pipeline.png del control de figuras` |
 
 El plan de commits por integrante, con autor y archivos, está en [`docs/PLAN_COMMITS.md`](docs/PLAN_COMMITS.md); coincide con la Tabla 23 del informe. La correspondencia con la rúbrica está en [`docs/checklist_rubrica.md`](docs/checklist_rubrica.md).
